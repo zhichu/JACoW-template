@@ -1,0 +1,1868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-03-20 Mon 14:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JACoW Template</title>
+<meta name="author" content="John Jowett (CERN), Michel Goossens (CERN), Martin Comyn (TRIUMF), John Poole (CERN), Todd Satogata (BNL), Ulrike Fischer, Volker RW Schaa (GSI), Zhichu Chen (SSRF)" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">JACoW Template</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgce48ec7">1. <span class="todo TODO">TODO</span> Introduction</a></li>
+<li><a href="#org6f26b0f">2. LaTeX Class</a>
+<ul>
+<li><a href="#org3fb1aa5">2.1. Master File</a></li>
+<li><a href="#org9db72f1">2.2. Descriptions</a>
+<ul>
+<li><a href="#orgc06f00e">2.2.1. Purpose</a></li>
+<li><a href="#org6521edc">2.2.2. License</a></li>
+<li><a href="#org53df39b">2.2.3. Maintainer</a></li>
+<li><a href="#org0814bdd">2.2.4. Files</a></li>
+</ul>
+</li>
+<li><a href="#orgdfee6c5">2.3. Changelog</a></li>
+<li><a href="#orgc65dab4">2.4. Identification</a></li>
+<li><a href="#org70eed18">2.5. Banner</a></li>
+<li><a href="#orgd27dadf">2.6. Options</a>
+<ul>
+<li><a href="#org3f8dcb2">2.6.1. geometry</a></li>
+<li><a href="#org809efe9">2.6.2. Frame</a></li>
+<li><a href="#org10637a2">2.6.3. biblatex</a></li>
+<li><a href="#org62800a3">2.6.4. refpage</a></li>
+<li><a href="#orgf59af6b">2.6.5. Pass Options</a></li>
+<li><a href="#org26cfe99">2.6.6. Paper Size</a></li>
+</ul>
+</li>
+<li><a href="#org04003af">2.7. Packages</a>
+<ul>
+<li><a href="#orgf726f5e">2.7.1. Load Class</a></li>
+<li><a href="#org5237821">2.7.2. fix-cm   Permit Computer Modern fonts at arbitrary sizes.</a></li>
+<li><a href="#orgc18cbf7">2.7.3. flushend   Balancing columns at last page</a></li>
+<li><a href="#org0031ca8">2.7.4. Confliction between lineno and minted</a></li>
+<li><a href="#org53de976">2.7.5. etoolbox   e-TeX tools for LaTeX</a></li>
+<li><a href="#org67b801a">2.7.6. iftex   Am I running under pdfTeX, XeTeX or LuaTeX?</a></li>
+<li><a href="#org881ba32">2.7.7. textcase   Case conversion ignoring mathematics, etc</a></li>
+<li><a href="#org7a71f72">2.7.8. siunitx   A comprehensive (SI) units package</a></li>
+<li><a href="#org5d4ed64">2.7.9. graphicx   Enhanced support for graphics</a></li>
+<li><a href="#org6f4d1ed">2.7.10. booktabs   Publication quality tables in LaTeX</a></li>
+<li><a href="#org301b007">2.7.11. caption   Customising captions in floating environments</a></li>
+<li><a href="#orgaf3900a">2.7.12. xcolor   Driver-independent color extensions for LaTeX and pdfLaTeX</a></li>
+<li><a href="#orgb1db26a">2.7.13. amsmath   AMS mathematical facilities for LaTeX</a></li>
+<li><a href="#org8bf941b">2.7.14. csquotes   Context sensitive quotation facilities</a></li>
+<li><a href="#orga99b95f">2.7.15. geometry   Flexible and complete interface to document dimensions</a></li>
+<li><a href="#orgda33f1c">2.7.16. footmisc   A range of footnote options</a></li>
+<li><a href="#orgfd6fc0d">2.7.17. url   Verbatim with URL-sensitive line breaks</a></li>
+<li><a href="#org960a07e">2.7.18. newtxtt   Enhancement of typewriter fonts from newtx</a></li>
+<li><a href="#org8b428ad">2.7.19. URL Fonts</a></li>
+<li><a href="#orgaadc040">2.7.20. XeTeX &amp; LuaTeX</a></li>
+<li><a href="#org18c78bf">2.7.21. microtype   Subliminal refinements towards typographical perfection</a></li>
+</ul>
+</li>
+<li><a href="#orgea83aed">2.8. Customisation</a>
+<ul>
+<li><a href="#org2599704">2.8.1. Lists</a></li>
+<li><a href="#org9289fa0">2.8.2. Float Parameters</a></li>
+<li><a href="#orgd344f12">2.8.3. Headings</a></li>
+<li><a href="#org32d6c05">2.8.4. Title</a></li>
+</ul>
+</li>
+<li><a href="#orgc15c5c1">2.9. biblatex</a></li>
+</ul>
+</li>
+<li><a href="#org0f5c29a">3. LaTeX Samples</a></li>
+<li><a href="#orgbf6bbb8">4. <span class="todo TODO">TODO</span> MS Word</a></li>
+<li><a href="#org9f4f355">5. <span class="todo TODO">TODO</span> Apach OpenOffice</a></li>
+<li><a href="#org55c30fe">6. Future Work</a>
+<ul>
+<li><a href="#orgf382942">6.1. Bugs</a></li>
+<li><a href="#org038bd72">6.2. Smart Documentation</a></li>
+<li><a href="#org2370ad5">6.3. Tips</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgce48ec7" class="outline-2">
+<h2 id="orgce48ec7"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The LaTeX class file is based on <a href="https://github.com/JACoW-org/JACoW_Templates/tree/86bb39f72097d4e2c1df2f0abba496e34e55727b">v2.15</a> of the JACoW template. I run
+</p>
+<div class="org-src-container">
+<pre class="src src-shell"><span style="color: #8f0075; font-weight: bold;">cd</span>
+mkdir -p git/jacow/JACoW_Templates
+<span style="color: #8f0075; font-weight: bold;">cd</span> git/jacow/JACow_Templates
+git init
+git remote add origin https://github.com/JACoW-org/JACoW_Templates.git
+git fetch origin <span style="color: #0000b0;">86bb39f72097d4e2c1df2f0abba496e34e55727b</span>
+git checkout <span style="color: #0000b0;">86bb39f72097d4e2c1df2f0abba496e34e55727b</span>
+</pre>
+</div>
+
+<p>
+Then run
+</p>
+<div class="org-src-container">
+<pre class="src src-shell" id="org7298904">cat ~/git/jacow/JACoW_Templates/LaTeX/A4/jacow.cls
+</pre>
+</div>
+
+<p>
+and split emacs horizontally to incrementally copy the original class file into different sections.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6f26b0f" class="outline-2">
+<h2 id="org6f26b0f"><span class="section-number-2">2.</span> LaTeX Class</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org3fb1aa5" class="outline-3">
+<h3 id="org3fb1aa5"><span class="section-number-3">2.1.</span> Master File</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Put a description of the file:
+</p>
+<p>
+Then change log:
+</p>
+<p>
+Identification (current version, modification date, etc.)
+</p>
+<p>
+Banner information while compiling
+</p>
+<p>
+General options for the class
+</p>
+<p>
+Import third party packages
+</p>
+<p>
+Customize
+</p>
+<p>
+Bibliography
+</p>
+<p>
+Ignore everything after
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9db72f1" class="outline-3">
+<h3 id="org9db72f1"><span class="section-number-3">2.2.</span> Descriptions</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+
+<div id="outline-container-orgc06f00e" class="outline-4">
+<h4 id="orgc06f00e"><span class="section-number-4">2.2.1.</span> Purpose</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<div class="org-src-container">
+<pre class="src src-latex">This file has been developed as a common template for papers
+destined for electronic production for Accelerator Conferences
+
+See the JACoW website for more information
+
+http://jacow.org/
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6521edc" class="outline-4">
+<h4 id="org6521edc"><span class="section-number-4">2.2.2.</span> License</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<div class="org-src-container">
+<pre class="src src-latex">This work may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either
+version 1.3c of this license or (at your option) any later
+version. This version of this license is in
+http://www.latex-project.org/lppl/lppl-1-3c.txt
+and the latest version of this license is in
+http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of
+LaTeX version 2005/12/01 or later.
+
+This work has the LPPL maintenance status "maintained".
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org53df39b" class="outline-4">
+<h4 id="org53df39b"><span class="section-number-4">2.2.3.</span> Maintainer</h4>
+<div class="outline-text-4" id="text-2-2-3">
+<div class="org-src-container">
+<pre class="src src-latex">This Current Maintainer of this work is Volker RW Schaa.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0814bdd" class="outline-4">
+<h4 id="org0814bdd"><span class="section-number-4">2.2.4.</span> Files</h4>
+<div class="outline-text-4" id="text-2-2-4">
+<div class="org-src-container">
+<pre class="src src-latex">This work consists of the following files
+jacow.cls               this class file
+JACoW_LaTeX_A4.tex      A4/letter templates to demonstrate the
+JACoW_LaTeX_Letter.tex  .. use and explain the various parameters
+.. and settings for a submission to
+.. a JACoW conference proceedings
+JACoW_LaTeX_A4.pdf      template in format A4 and European
+settings (citation and hyphenation)
+JACoW_LaTeX_Letter.pdf  template in format letter and American
+setting (citation and hyphenation)
+annexes-A4.tex          Annexes A-C which are included in "JACoW_LaTeX_A4.tex"
+annexes-Letter.tex      Annexes A-C which are included in "JACoW_LaTeX_Letter.tex"
+
+JACpic_mc.pdf           a graphic showing the JACoW page format
+JACpic2.jpg             a graphic for a full width figure and
+multiline caption
+jacow-collaboration.tex  an example title page showing the
+jacow-collaboration.pdf  JACoW Colloaboration, the responsible
+editors for the various platform
+dependent templates (LaTeX, Word on PC and
+Mac, ODF). The PDF is included in the template
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdfee6c5" class="outline-3">
+<h3 id="orgdfee6c5"><span class="section-number-3">2.3.</span> Changelog</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp" id="org1026654"><span style="color: #000000;">(</span><span style="color: #531ab6; font-weight: bold;">let</span> <span style="color: #dd22dd;">(</span><span style="color: #008899;">(</span>author-date <span style="color: #972500;">(</span>concat <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Author"</span><span style="color: #808000;">)</span> <span style="color: #3548cf;">", "</span> <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Date"</span><span style="color: #808000;">)</span><span style="color: #972500;">)</span><span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span>
+  <span style="color: #dd22dd;">(</span>substring <span style="color: #008899;">(</span>concat <span style="color: #972500;">(</span>make-string <span style="color: #0000b0;">79</span> ?=<span style="color: #972500;">)</span> author-date<span style="color: #008899;">)</span>
+             <span style="color: #008899;">(</span>length author-date<span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span><span style="color: #000000;">)</span>
+</pre>
+</div>
+</div>
+
+
+<ol class="org-ol">
+<li><a id="org0c5b61e"></a>v1.3<br />
+<div class="outline-text-5" id="text-2-3-0-1">
+<div class="org-src-container">
+<pre class="src src-latex">v0.1 to 1.3 : JAC2000.cls
+Special thanks to John Jowett and Michel Goossens from CERN and
+Martin Comyn at TRIUMF for their significant contributions to
+this class file over the period 1996 to 2000.
+                                               John Poole
+                                               March 2000
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org808deb5"></a>v1.4<br />
+<div class="outline-text-5" id="text-2-3-0-2">
+<div class="org-src-container">
+<pre class="src src-latex">v1.4 : JAC2001.cls
+JAC2001.cls is a modified version of JAC2000.cls to produce indented
+first paragraphs after section, subsection and subsubsection headings.
+                                               Martin Comyn  April 2001
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org711ec5a"></a>v1.5<br />
+<div class="outline-text-5" id="text-2-3-0-3">
+<div class="org-src-container">
+<pre class="src src-latex">v1.5 : JAC2003.cls
+This is a modified version of JAC2003.cls to adjust space around
+section and subsection headers to be more consistent with JACoW Word
+templates.                                     Todd Satogata  March 2011
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orge42da36"></a>v1.6<br />
+<div class="outline-text-5" id="text-2-3-0-4">
+<div class="org-src-container">
+<pre class="src src-latex">v 1.6 : jacow.cls
+This is a complectly rewritten version of JAC2003.cls which needs a current
+TeX-System to run.
+                                                Ulrike Fischer, November 2013
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org11d5828"></a>v1.7<br />
+<div class="outline-text-5" id="text-2-3-0-5">
+<div class="org-src-container">
+<pre class="src src-latex">v 1.7
+- small change to correct the text block inside JACoW's magic red borders for
+  a4paper (aca4); top has been set 18.5mm (19mm is defined in the template but
+  leaves descenders outside the lower y margin).
+- duplicate {boxit} removed
+                                                Volker RW Schaa, 14 April 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orga69b28c"></a>v1.8<br />
+<div class="outline-text-5" id="text-2-3-0-6">
+<div class="org-src-container">
+<pre class="src src-latex">v1.8
+- added setup for <span style="color: #531ab6; font-weight: bold;">\micro</span> sign which disappears when using XeTeX or LuaTeX
+  with unicode-math.                             Ulrike Fischer, 21 April 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org4ee290e"></a>v1.9<br />
+<div class="outline-text-5" id="text-2-3-0-7">
+<div class="org-src-container">
+<pre class="src src-latex">v1.9
+- fixed the pdfLaTeX warnings for the text/math-micro hack
+                                                 Ulrike Fischer, 22 April 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org6defcd9"></a>v1.91<br />
+<div class="outline-text-5" id="text-2-3-0-8">
+<div class="org-src-container">
+<pre class="src src-latex">v1.91
+- Ligatures=TeX switch introduced to accommodate
+                                                 Ulrike Fischer, 22 April 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org3b8bb83"></a>v1.92<br />
+<div class="outline-text-5" id="text-2-3-0-9">
+<div class="org-src-container">
+<pre class="src src-latex">v1.92
+- settings for top margin have to be different in A4 and letter to accommodate
+  JACoW's PitStop Action List. This was found after receiving Plamen Hopchev's
+  email about margins and testing the workflow with cropping the bounding box
+  which starts at the lower left edge and not at the top (see graphic JACpic_mc
+  in the template for measures).
+                                                Volker RW Schaa, 29 April 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org7d29644"></a>v1.93<br />
+<div class="outline-text-5" id="text-2-3-0-10">
+<div class="org-src-container">
+<pre class="src src-latex">v1.93
+- setting the bottom margin (19mm) without top solves the problem for different
+  A4/Letter settings. This was already the default in v1.6. Pointed out by
+  Plamen Hopchev. To accommodate the descenders the bottom margin has been set
+  to 56pt now.
+                                                  Volker RW Schaa, 01 May 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org960326d"></a>v1.94<br />
+<div class="outline-text-5" id="text-2-3-0-11">
+<div class="org-src-container">
+<pre class="src src-latex">v1.94
+- the micro sign in UTF-8 prevents ASCII format of the cls file. Ulrike pointed
+  out a hack in http://tex.stackexchange.com/questions/172968/hide-notation-from-pdftex
+  which is now introduced.
+                                                  Volker RW Schaa, 02 May 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org269e795"></a>v1.95<br />
+<div class="outline-text-5" id="text-2-3-0-12">
+<div class="org-src-container">
+<pre class="src src-latex">v1.95
+- only change to the version 1.94 are the extended documentation and license
+  statement (lppl1.3c) as preparation for publication on CTAN.
+                                                  Volker RW Schaa, 02 May 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgb2ef84c"></a>v1.96<br />
+<div class="outline-text-5" id="text-2-3-0-13">
+<div class="org-src-container">
+<pre class="src src-latex">v1.96
+- modification of bibatex style information. Since the JACoW template Feb-2016
+  the bibliography requires the IEEEtran style. Heine provided an adapted
+  version using the required values of the template:
+  + ieee biblatex style instead of numeric-compv
+  + doi field is cleared for all entries
+  + et al. is used when there are &gt; 6 authors (maxnames=6). In that case,
+    only the first author is mentioned (minnames=1)
+  + url field is cleared for articles and inproceedings
+  + giveninits=true reduces all given names to initials
+                                           Heine D&#248;lrath Thomsen, 30 June 2016
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgd112b29"></a>v2.00<br />
+<div class="outline-text-5" id="text-2-3-0-14">
+<div class="org-src-container">
+<pre class="src src-latex">v2.00
+- after using v1.96 during conferences where DOIs/URLs were present in biblio-
+  graphic records, the following changes to Heine's version have been made:
+  + doi field allowed
+  + url field allowed
+                                                Volker RW Schaa, 02 May 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgf22b360"></a>v2.1<br />
+<div class="outline-text-5" id="text-2-3-0-15">
+<div class="org-src-container">
+<pre class="src src-latex">v2.1 new options introduced
+flushend: new: keeplastbox
+siunitx:  new: binary-units=true
+BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
+          new: dashed=false
+          removed: doi=false
+                                                Volker RW Schaa, 02 May 2014
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orge5f3eb3"></a>v2.2<br />
+<div class="outline-text-5" id="text-2-3-0-16">
+<div class="org-src-container">
+<pre class="src src-latex">v2.2
+- adapted to the changes of template version 2018-02
+- made this one official
+                                                 Volker RW Schaa, 23 Feb 2018
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgd562c28"></a>v2.3<br />
+<div class="outline-text-5" id="text-2-3-0-17">
+<div class="org-src-container">
+<pre class="src src-latex">v2.3
+- font for tt switched to newtxtt with option zerostyle=d (dotted 0)
+                                                 Volker RW Schaa, 15 Jan 2019
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgdebbd6e"></a>v2.4<br />
+<div class="outline-text-5" id="text-2-3-0-18">
+<div class="org-src-container">
+<pre class="src src-latex">v2.4
+- version 2.3 did not work for XeTeX/LuaTeX, therefore font change using
+  <span style="color: #531ab6; font-weight: bold;">\def\UrlFont</span> and switching the fontencoding to T1 (suggested by Ulrike Fischer)
+- package amsmath included to provide
+                                                 Volker RW Schaa, 01 Apr 2019
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgaea7d33"></a>v2.5<br />
+<div class="outline-text-5" id="text-2-3-0-19">
+<div class="org-src-container">
+<pre class="src src-latex">v2.5
+- flushend dropped the option keeplastbox, therefore removed from jacow package
+  option list
+- Option "binary-units" has been removed from siunitx release.
+- Option "detect-mode" has been deprecated in this (siunitx) release: v3.0.32
+       Use "mode=match" as a replacement.
+- Option "detect-weight" has been deprecated in this (siunitx) release: v3.0.32
+       Use "reset-text-series=false, text-series-to-math=true" as a replacement.
+- fixltx2e is not required with releases after 2015
+                                                 Volker RW Schaa, 14 Oct 2021
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org5e24739"></a>v2.6<br />
+<div class="outline-text-5" id="text-2-3-0-20">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.6
+- ifluatex/ifxetex dropped for iftex
+                                                 Volker RW Schaa, 11 Nov 2021
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org8f31c5a"></a>v2.7<br />
+<div class="outline-text-5" id="text-2-3-0-21">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.7
+- added some biblatex macros to achieve closer JACoW reference formatting
+  than standard ieeetran
+                                                 Volker RW Schaa, 02 Feb 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org5cc6ffc"></a>v2.8<br />
+<div class="outline-text-5" id="text-2-3-0-22">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.8
+- removes the (non)stretchability <span style="color: #531ab6; font-weight: bold;">\bibitemsep</span>{0pt} from tests (oversight in v2.7)
+- introduced the page setting by geometry to JACoW paper size which wasn't
+  working in earlier version of jacow.cls due to the necessary offset using "pt".
+  With Zhichu Chen's suggestion of using "bp" instead of "pt", Ivan's JACoW utils
+  does not complain anymore, and the /Mediabox is correctly shown in Acrobat and
+  PitStop.
+       paperheight  792.0 bp   794.97 pt [794.96208 pt]
+       paperwidth   595.0 bp   597.23 pt [597.22530 pt]
+  Currently I have not found where in a PDF it's defined
+  whether (media/crop box) values are "pt" or "bp".
+                                      Zhichu Chen, Volker RW Schaa, 10 Jun 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgac404ec"></a>v2.9<br />
+<div class="outline-text-5" id="text-2-3-0-23">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.9
+- remove the math-micro option from siunitx as it was deprecated.
+                                                   Volker RW Schaa, 12 Jun 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgb2ad029"></a>v2.10<br />
+<div class="outline-text-5" id="text-2-3-0-24">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.10
+- added Zhichu's switch between version of siunitx (older than 2021-05-17}.
+                                      Zhichu Chen, Volker RW Schaa, 15 Jun 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgb65136b"></a>v2.11<br />
+<div class="outline-text-5" id="text-2-3-0-25">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.11
+- remove the (empty) package textcase and substituted it by
+  <span style="color: #531ab6; font-weight: bold;">\let\MakeTextUppercase\MakeUppercase</span>
+                                                   Volker RW Schaa, 17 Jul 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org96c6571"></a>v2.12<br />
+<div class="outline-text-5" id="text-2-3-0-26">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.12
+- the new changes to LaTeX3 (2022-06-01) break the old "<span style="color: #531ab6; font-weight: bold;">\@nonchangecase</span>" command
+      <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{command} added
+                                    Ulrike Fischer, Volker RW Schaa, 04 Aug 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgf98b25c"></a>v2.13<br />
+<div class="outline-text-5" id="text-2-3-0-27">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.13
+- placement of DOI changed: if it fits on the line OK, otherwise use a new line
+- period/fullstop placed in front of DOI
+                                                       Zhichu Chen, 05 Aug 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org619f592"></a>v2.14<br />
+<div class="outline-text-5" id="text-2-3-0-28">
+<div class="org-src-container">
+<pre class="src src-latex"> v2.14
+- `lineno` with "minted" are not supported
+- place a "<span style="color: #884900; font-weight: bold;">\\</span>" rather than <span style="color: #531ab6; font-weight: bold;">\par</span> for linebreak in the definition of <span style="color: #531ab6; font-weight: bold;">\placedoi</span> to
+   et the vertical spacing right
+                                                       Zhichu Chen, 06 Aug 2022
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org848c848"></a>v2.15<br />
+<div class="outline-text-5" id="text-2-3-0-29">
+<div class="org-src-container">
+<pre class="src src-latex">v2.15
+- all intermediate changes combined in this version
+- check for <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span> instead of <span style="color: #531ab6; font-weight: bold;">\IfFormatAtLeastTF</span>{2022/06/01}
+                                      Zhichu Chen, Volker RW Schaa, 09 Aug 2022
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgc65dab4" class="outline-3">
+<h3 id="orgc65dab4"><span class="section-number-3">2.4.</span> Identification</h3>
+<div class="outline-text-3" id="text-2-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\def\fileversion</span>{2.15}
+<span style="color: #531ab6; font-weight: bold;">\def\filedate</span>{2022/08/09}
+<span style="color: #531ab6; font-weight: bold;">\def\docdate</span> {2022/08/09}
+
+<span style="color: #531ab6; font-weight: bold;">\NeedsTeXFormat</span>{LaTeX2e}
+<span style="color: #531ab6; font-weight: bold;">\ProvidesClass</span>{<span style="color: #721045;">jacow</span>}[<span style="color: #005e8b; font-weight: bold;">\filedate\space</span><span style="color: #005e8b;"> v</span><span style="color: #005e8b; font-weight: bold;">\fileversion</span>]
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org70eed18" class="outline-3">
+<h3 id="org70eed18"><span class="section-number-3">2.5.</span> Banner</h3>
+<div class="outline-text-3" id="text-2-5">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\typeout</span>{------------------------------------------------------------------------}
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{LaTeX2e Class file for Accelerator Conference publication for LaTeX2e users}
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{ }
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{Use the boxit option to draw a box on page showing the correct margins}
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{ }
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{Itemize, Enumerate and Description environments are compact versions}
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{------------------------------------------------------------------------}
+<span style="color: #531ab6; font-weight: bold;">\typeout</span>{ }     
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd27dadf" class="outline-3">
+<h3 id="orgd27dadf"><span class="section-number-3">2.6.</span> Options</h3>
+<div class="outline-text-3" id="text-2-6">
+</div>
+
+<div id="outline-container-org3f8dcb2" class="outline-4">
+<h4 id="org3f8dcb2"><span class="section-number-4">2.6.1.</span> geometry</h4>
+<div class="outline-text-4" id="text-2-6-1">
+</div>
+<ol class="org-ol">
+<li><a id="org5d251da"></a>US Letter<br />
+<div class="outline-text-5" id="text-2-6-1-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{acus}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{paper=letterpaper}{geometry}
+  <span style="color: #531ab6; font-weight: bold;">\typeout</span>{Setup for US LETTER PAPER}}
+
+<span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{letterpaper}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{paper=letterpaper}{geometry}
+  <span style="color: #531ab6; font-weight: bold;">\typeout</span>{Setup for US LETTER PAPER}}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgf7e4c01"></a>A4<br />
+<div class="outline-text-5" id="text-2-6-1-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{a4paper}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{paper=a4paper}{geometry}
+  <span style="color: #531ab6; font-weight: bold;">\typeout</span>{Setup for A4 PAPER}}
+
+<span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{aca4}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{paper=a4paper}{geometry}
+  <span style="color: #531ab6; font-weight: bold;">\typeout</span>{Setup for A4 PAPER}}   
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org809efe9" class="outline-4">
+<h4 id="org809efe9"><span class="section-number-4">2.6.2.</span> Frame</h4>
+<div class="outline-text-4" id="text-2-6-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{boxit}{<span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{showframe}{geometry}}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10637a2" class="outline-4">
+<h4 id="org10637a2"><span class="section-number-4">2.6.3.</span> biblatex</h4>
+<div class="outline-text-4" id="text-2-6-3">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newif\ifjacowbiblatex</span>
+<span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{biblatex}{<span style="color: #531ab6; font-weight: bold;">\jacowbiblatextrue</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org62800a3" class="outline-4">
+<h4 id="org62800a3"><span class="section-number-4">2.6.4.</span> refpage</h4>
+<div class="outline-text-4" id="text-2-6-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newif\ifjacowrefpage</span>
+<span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{refpage}{<span style="color: #531ab6; font-weight: bold;">\jacowrefpagetrue</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf59af6b" class="outline-4">
+<h4 id="orgf59af6b"><span class="section-number-4">2.6.5.</span> Pass Options</h4>
+<div class="outline-text-4" id="text-2-6-5">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>*{<span style="color: #531ab6; font-weight: bold;">\PassOptionsToClass</span>{<span style="color: #531ab6; font-weight: bold;">\CurrentOption</span>}{article}}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org26cfe99" class="outline-4">
+<h4 id="org26cfe99"><span class="section-number-4">2.6.6.</span> Paper Size</h4>
+<div class="outline-text-4" id="text-2-6-6">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ExecuteOptions</span>{aca4}
+<span style="color: #531ab6; font-weight: bold;">\ProcessOptions</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org04003af" class="outline-3">
+<h3 id="org04003af"><span class="section-number-3">2.7.</span> Packages</h3>
+<div class="outline-text-3" id="text-2-7">
+</div>
+
+<div id="outline-container-orgf726f5e" class="outline-4">
+<h4 id="orgf726f5e"><span class="section-number-4">2.7.1.</span> Load Class</h4>
+<div class="outline-text-4" id="text-2-7-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\LoadClass</span>[10pt,twocolumn]{article}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5237821" class="outline-4">
+<h4 id="org5237821"><span class="section-number-4">2.7.2.</span> fix-cm   Permit Computer Modern fonts at arbitrary sizes.</h4>
+<div class="outline-text-4" id="text-2-7-2">
+<p>
+<a href="https://ctan.org/pkg/fix-cm">https://ctan.org/pkg/fix-cm</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">fix-cm</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc18cbf7" class="outline-4">
+<h4 id="orgc18cbf7"><span class="section-number-4">2.7.3.</span> flushend   Balancing columns at last page</h4>
+<div class="outline-text-4" id="text-2-7-3">
+<p>
+<a href="https://ctan.org/pkg/flushend">https://ctan.org/pkg/flushend</a>
+</p>
+
+<p>
+Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[]{<span style="color: #721045;">flushend</span>} <span style="color: #7f0000; font-style: italic;">%% </span><span style="color: #7f0000; font-style: italic;">modified 2.5</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0031ca8" class="outline-4">
+<h4 id="org0031ca8"><span class="section-number-4">2.7.4.</span> Confliction between lineno and minted</h4>
+<div class="outline-text-4" id="text-2-7-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">a lot of authors love to use `minted` to typeset codes which also loads `lineno`</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">`flushend` does not balance when `lineno` is also loaded,</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">let's pretend it's already loaded</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">this will break linebreaks (not as serious as it sounds) for `minted` but we don't care</span>
+<span style="color: #531ab6; font-weight: bold;">\@namedef</span>{ver@lineno.sty}{9999/12/31}
+<span style="color: #531ab6; font-weight: bold;">\@namedef</span>{opt@lineno.sty}{}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org53de976" class="outline-4">
+<h4 id="org53de976"><span class="section-number-4">2.7.5.</span> etoolbox   e-TeX tools for LaTeX</h4>
+<div class="outline-text-4" id="text-2-7-5">
+<p>
+<a href="https://ctan.org/pkg/etoolbox">https://ctan.org/pkg/etoolbox</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">etoolbox</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org67b801a" class="outline-4">
+<h4 id="org67b801a"><span class="section-number-4">2.7.6.</span> iftex   Am I running under pdfTeX, XeTeX or LuaTeX?</h4>
+<div class="outline-text-4" id="text-2-7-6">
+<p>
+<a href="https://ctan.org/pkg/iftex">https://ctan.org/pkg/iftex</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">iftex</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org881ba32" class="outline-4">
+<h4 id="org881ba32"><span class="section-number-4">2.7.7.</span> textcase   Case conversion ignoring mathematics, etc</h4>
+<div class="outline-text-4" id="text-2-7-7">
+<p>
+<a href="https://ctan.org/pkg/textcase">https://ctan.org/pkg/textcase</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Ulrike's suggestion to the UPPERCASING problem after LaTeX update 2022-06-01 </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">or is it even 2022-06-30 ?? =&gt; check of 2022-06-01 changed to definition of</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\AddToNoCaseChangeList</span><span style="color: #7f0000; font-style: italic;"> which came obviously later </span>
+<span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\providecommand\IfFormatAtLeastTF</span><span style="color: #7f0000; font-style: italic;">{</span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\@ifl@t@r\fmtversion</span><span style="color: #7f0000; font-style: italic;">}</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\IfFormatAtLeastTF</span><span style="color: #7f0000; font-style: italic;">{2022/06/01}%</span>
+<span style="color: #531ab6; font-weight: bold;">\ifx\AddToNoCaseChangeList\@undefined</span>
+  <span style="color: #7f0000; font-style: italic;">% old</span>
+  <span style="color: #7f0000; font-style: italic;">% Add thanks to the list of "</span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\@nonchangecase</span><span style="color: #7f0000; font-style: italic;">"-commands from textcase:</span>
+  <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">textcase</span>}
+  <span style="color: #531ab6; font-weight: bold;">\def\@uclcnotmath</span>#1#2#3#4{<span style="color: #531ab6; font-weight: bold;">\begingroup</span>
+    #1<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\def</span><span style="color: #0000b0; font-weight: bold;">\(</span><span style="color: #0000b0;">{</span><span style="color: #0000b0;">$}</span><span style="color: #0000b0; font-weight: bold;">\let\)</span><span style="color: #884900; font-weight: bold;">\(</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\def\NoCaseChange</span><span style="color: #0000b0;">##1{</span><span style="color: #0000b0; font-weight: bold;">\noexpand\NoCaseChange</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\noexpand</span><span style="color: #0000b0;">##1}}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\@nonchangecase</span><span style="color: #0000b0; font-weight: bold;">\</span><span style="color: #0000b0; font-weight: bold;">label</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\@nonchangecase</span><span style="color: #0000b0; font-weight: bold;">\</span><span style="color: #0000b0; font-weight: bold;">ref</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\@nonchangecase</span><span style="color: #0000b0; font-weight: bold;">\ensuremath</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\@nonchangecase</span><span style="color: #0000b0; font-weight: bold;">\</span><span style="color: #0000b0; font-weight: bold;">thanks</span><span style="color: #0000b0;"> </span><span style="color: #7f0000; font-style: italic;">%new</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\@nonchangecase\si</span><span style="color: #0000b0;"> </span><span style="color: #7f0000; font-style: italic;">%new</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\def\SI</span><span style="color: #0000b0;">##1##2{</span><span style="color: #0000b0; font-weight: bold;">\NoCaseChange</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\SI</span><span style="color: #0000b0;">{##1}{##2}}} </span><span style="color: #7f0000; font-style: italic;">% ugly patch</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\def</span><span style="color: #0000b0; font-weight: bold;">\</span><span style="color: #0000b0; font-weight: bold;">cite</span><span style="color: #0000b0;">##1##{</span><span style="color: #0000b0; font-weight: bold;">\toks@</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\noexpand</span><span style="color: #0000b0; font-weight: bold;">\</span><span style="color: #0000b0; font-weight: bold;">cite</span><span style="color: #0000b0;">##1}</span><span style="color: #0000b0; font-weight: bold;">\@citex</span><span style="color: #0000b0;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\def\@citex</span><span style="color: #0000b0;">##1{</span><span style="color: #0000b0; font-weight: bold;">\NoCaseChange</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\the\toks@</span><span style="color: #0000b0;">{##1}}}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\def\reserved@a</span><span style="color: #0000b0;">##1##2{</span><span style="color: #0000b0; font-weight: bold;">\let</span><span style="color: #0000b0;">#2</span><span style="color: #0000b0; font-weight: bold;">\reserved@a</span><span style="color: #0000b0;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\expandafter\reserved@a\@uclclist\reserved@b</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\reserved@b\@gobble</span><span style="color: #0000b0;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\protected@edef\reserved@a</span><span style="color: #0000b0;">{</span><span style="color: #0000b0; font-weight: bold;">\endgroup</span>
+<span style="color: #0000b0;">      </span><span style="color: #0000b0; font-weight: bold;">\noexpand\@skipmath</span><span style="color: #0000b0;">#3#4$</span><span style="color: #531ab6; font-weight: bold;">\valign</span>$}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\reserved@a</span>}
+<span style="color: #531ab6; font-weight: bold;">\else</span>
+  <span style="color: #531ab6; font-weight: bold;">\let\MakeTextUppercase\MakeUppercase</span>
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #884900; font-weight: bold;">\</span><span style="color: #531ab6; font-weight: bold;">thanks</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #884900; font-weight: bold;">\</span><span style="color: #531ab6; font-weight: bold;">label</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #884900; font-weight: bold;">\</span><span style="color: #531ab6; font-weight: bold;">ref</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #884900; font-weight: bold;">\</span><span style="color: #531ab6; font-weight: bold;">ensuremath</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #531ab6; font-weight: bold;">\si</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #531ab6; font-weight: bold;">\SI</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #531ab6; font-weight: bold;">\qty</span>}
+  <span style="color: #531ab6; font-weight: bold;">\AddToNoCaseChangeList</span>{<span style="color: #531ab6; font-weight: bold;">\unit</span>}
+<span style="color: #531ab6; font-weight: bold;">\fi</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7a71f72" class="outline-4">
+<h4 id="org7a71f72"><span class="section-number-4">2.7.8.</span> siunitx   A comprehensive (SI) units package</h4>
+<div class="outline-text-4" id="text-2-7-8">
+<p>
+<a href="https://ctan.org/pkg/siunitx">https://ctan.org/pkg/siunitx</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Option "binary-units" has been removed from (siunitx)</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Option "detect-mode" has been deprecated in this (siunitx) release: v3.0.32</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Use "mode=match" as a replacement.</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Option "detect-weight" has been deprecated in this (siunitx) release: v3.0.32</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Use "reset-text-series=false, text-series-to-math=true" as a replacement.</span>
+<span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\RequirePackage</span><span style="color: #7f0000; font-style: italic;">[mode=match, reset-text-series=false, text-series-to-math=true]{siunitx}</span>
+<span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">siunitx</span>}
+<span style="color: #531ab6; font-weight: bold;">\@ifpackagelater</span>{siunitx}{2021-05-17}<span style="color: #7f0000; font-style: italic;">%</span>
+{<span style="color: #531ab6; font-weight: bold;">\PackageInfo</span>{siunitx}{<span style="color: #7f0000; font-style: italic;">%</span>
+    Package newer than 2021-05-17,<span style="color: #531ab6; font-weight: bold;">\MessageBreak</span>
+    loading current settings.}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\sisetup</span>{mode=match, reset-text-series=false, text-series-to-math=true}}<span style="color: #7f0000; font-style: italic;">% copied from jacow.cls version 2.7</span>
+{<span style="color: #531ab6; font-weight: bold;">\PackageInfo</span>{siunitx}{<span style="color: #7f0000; font-style: italic;">%</span>
+    Package older than 2021-05-17,<span style="color: #531ab6; font-weight: bold;">\MessageBreak</span>
+    loading old settings.}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\sisetup</span>{detect-mode,detect-weight, binary-units=true}}<span style="color: #7f0000; font-style: italic;">%                % copied from jacow.cls version 2.4</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d4ed64" class="outline-4">
+<h4 id="org5d4ed64"><span class="section-number-4">2.7.9.</span> graphicx   Enhanced support for graphics</h4>
+<div class="outline-text-4" id="text-2-7-9">
+<p>
+<a href="https://ctan.org/pkg/graphicx">https://ctan.org/pkg/graphicx</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">graphicx</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6f4d1ed" class="outline-4">
+<h4 id="org6f4d1ed"><span class="section-number-4">2.7.10.</span> booktabs   Publication quality tables in LaTeX</h4>
+<div class="outline-text-4" id="text-2-7-10">
+<p>
+<a href="https://ctan.org/pkg/booktabs">https://ctan.org/pkg/booktabs</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">booktabs</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org301b007" class="outline-4">
+<h4 id="org301b007"><span class="section-number-4">2.7.11.</span> caption   Customising captions in floating environments</h4>
+<div class="outline-text-4" id="text-2-7-11">
+<p>
+<a href="https://ctan.org/pkg/caption">https://ctan.org/pkg/caption</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">figureposition=bottom,tableposition=top,skip=5pt</span>]{<span style="color: #721045;">caption</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaf3900a" class="outline-4">
+<h4 id="orgaf3900a"><span class="section-number-4">2.7.12.</span> xcolor   Driver-independent color extensions for LaTeX and pdfLaTeX</h4>
+<div class="outline-text-4" id="text-2-7-12">
+<p>
+<a href="https://ctan.org/pkg/xcolor">https://ctan.org/pkg/xcolor</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">xcolor</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb1db26a" class="outline-4">
+<h4 id="orgb1db26a"><span class="section-number-4">2.7.13.</span> amsmath   AMS mathematical facilities for LaTeX</h4>
+<div class="outline-text-4" id="text-2-7-13">
+<p>
+<a href="https://ctan.org/pkg/amsmath">https://ctan.org/pkg/amsmath</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">amsmath</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8bf941b" class="outline-4">
+<h4 id="org8bf941b"><span class="section-number-4">2.7.14.</span> csquotes   Context sensitive quotation facilities</h4>
+<div class="outline-text-4" id="text-2-7-14">
+<p>
+<a href="https://ctan.org/pkg/csquotes">https://ctan.org/pkg/csquotes</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\AtEndPreamble</span>{<span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">autostyle</span>]{<span style="color: #721045;">csquotes</span>}}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga99b95f" class="outline-4">
+<h4 id="orga99b95f"><span class="section-number-4">2.7.15.</span> geometry   Flexible and complete interface to document dimensions</h4>
+<div class="outline-text-4" id="text-2-7-15">
+<p>
+<a href="https://ctan.org/pkg/geometry">https://ctan.org/pkg/geometry</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Page layout:</span>
+<span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Zhichu's suggestion of using "bp instead of "pt"</span>
+<span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #005e8b;">twocolumn,</span>
+<span style="color: #005e8b;">columnsep = 5mm,</span>
+<span style="color: #005e8b;">left = 20mm,</span>
+<span style="color: #005e8b;">bottom = 56pt,</span>
+<span style="color: #005e8b;">paperwidth = 595bp,  </span><span style="color: #7f0000; font-style: italic;">%% </span><span style="color: #7f0000; font-style: italic;">paperwidth   597.23 pt = 595.0 bp  {597.22530 pt]</span>
+<span style="color: #005e8b;">textwidth = 170mm,</span>
+<span style="color: #005e8b;">paperheight = 792bp,  </span><span style="color: #7f0000; font-style: italic;">%% </span><span style="color: #7f0000; font-style: italic;">paperheight  794.97 pt   792.0 bp  [794.96208 pt]</span>
+<span style="color: #005e8b;">textheight = 9.5in,</span>
+<span style="color: #005e8b;">nomarginpar,</span>
+<span style="color: #005e8b;">heightrounded,</span>
+<span style="color: #005e8b;">noheadfoot,</span>
+<span style="color: #005e8b;">centering</span>]
+{<span style="color: #721045;">geometry</span>}
+
+<span style="color: #531ab6; font-weight: bold;">\columnseprule</span> 0pt
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgda33f1c" class="outline-4">
+<h4 id="orgda33f1c"><span class="section-number-4">2.7.16.</span> footmisc   A range of footnote options</h4>
+<div class="outline-text-4" id="text-2-7-16">
+<p>
+<a href="https://ctan.org/pkg/footmisc">https://ctan.org/pkg/footmisc</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\usepackage</span>[<span style="color: #005e8b;">hang</span>]{<span style="color: #721045;">footmisc</span>}
+<span style="color: #531ab6; font-weight: bold;">\setlength</span>{<span style="color: #005e8b; font-weight: bold;">\footnotemargin</span>}{<span style="color: #005e8b;">.6em</span>}
+<span style="color: #531ab6; font-weight: bold;">\pagestyle</span>{<span style="color: #721045;">empty</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfd6fc0d" class="outline-4">
+<h4 id="orgfd6fc0d"><span class="section-number-4">2.7.17.</span> url   Verbatim with URL-sensitive line breaks</h4>
+<div class="outline-text-4" id="text-2-7-17">
+<p>
+<a href="https://ctan.org/pkg/url">https://ctan.org/pkg/url</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">url</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org960a07e" class="outline-4">
+<h4 id="org960a07e"><span class="section-number-4">2.7.18.</span> newtxtt   Enhancement of typewriter fonts from newtx</h4>
+<div class="outline-text-4" id="text-2-7-18">
+<p>
+<a href="https://ctan.org/pkg/newtxtt">https://ctan.org/pkg/newtxtt</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">zerostyle=d</span>]{<span style="color: #721045;">newtxtt</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b428ad" class="outline-4">
+<h4 id="org8b428ad"><span class="section-number-4">2.7.19.</span> URL Fonts</h4>
+<div class="outline-text-4" id="text-2-7-19">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">redefine the default Typewriter Font to newtxtt with dotted zeros (v2.3)</span>
+<span style="color: #7f0000; font-style: italic;">% </span>
+
+<span style="color: #531ab6; font-weight: bold;">\newcommand</span><span style="color: #721045; font-weight: bold;">\urlZDtxt</span>{<span style="color: #721045; font-weight: bold;">\fontencoding</span><span style="color: #721045;">{T1}</span><span style="color: #721045; font-weight: bold;">\fontfamily</span><span style="color: #721045;">{newtxtt}</span><span style="color: #721045; font-weight: bold;">\selectfont</span>}
+<span style="color: #531ab6; font-weight: bold;">\def\UrlFont</span>{<span style="color: #531ab6; font-weight: bold;">\urlZDtxt</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaadc040" class="outline-4">
+<h4 id="orgaadc040"><span class="section-number-4">2.7.20.</span> XeTeX &amp; LuaTeX</h4>
+<div class="outline-text-4" id="text-2-7-20">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ifboolexpr</span>{bool{xetex} or bool{luatex}}
+  {}
+  { <span style="color: #531ab6; font-weight: bold;">\catcode</span>`\^^^=9
+  }
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ifboolexpr</span>{bool{xetex} or bool{luatex}}
+  { <span style="color: #531ab6; font-weight: bold;">\let\ori@vdots\vdots</span>
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">unicode-math</span>}
+    <span style="color: #531ab6; font-weight: bold;">\AtBeginDocument</span>{<span style="color: #531ab6; font-weight: bold;">\let\vdots\ori@vdots</span>}
+    <span style="color: #531ab6; font-weight: bold;">\setmainfont</span>[Ligatures=TeX]{TeX Gyre Termes}
+    <span style="color: #531ab6; font-weight: bold;">\setmathfont</span>{TeX Gyre Termes Math}
+    <span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\sisetup</span><span style="color: #7f0000; font-style: italic;">{</span>
+    <span style="color: #7f0000; font-style: italic;">% math-micro = </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\text</span><span style="color: #7f0000; font-style: italic;">{^^^^03bc},</span>
+    <span style="color: #7f0000; font-style: italic;">% text-micro = ^^^^03bc</span>
+    <span style="color: #7f0000; font-style: italic;">% }</span>
+  }
+  {
+    <span style="color: #7f0000; font-style: italic;">% Fonts: Times clones</span>
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">textcomp</span>}
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">T1</span>]{<span style="color: #721045;">fontenc</span>}
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">lmodern</span>}
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">tgtermes</span>}
+    <span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">newtxmath</span>}
+    <span style="color: #531ab6; font-weight: bold;">\input</span>{<span style="color: #0000b0;">glyphtounicode</span>}
+    <span style="color: #531ab6; font-weight: bold;">\pdfgentounicode</span>=1
+    <span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\RequirePackage</span><span style="color: #7f0000; font-style: italic;">{cmap}</span>
+  }
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org18c78bf" class="outline-4">
+<h4 id="org18c78bf"><span class="section-number-4">2.7.21.</span> microtype   Subliminal refinements towards typographical perfection</h4>
+<div class="outline-text-4" id="text-2-7-21">
+<p>
+<a href="https://ctan.org/pkg/microtype">https://ctan.org/pkg/microtype</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">microtype</span>}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgea83aed" class="outline-3">
+<h3 id="orgea83aed"><span class="section-number-3">2.8.</span> Customisation</h3>
+<div class="outline-text-3" id="text-2-8">
+</div>
+
+<div id="outline-container-org2599704" class="outline-4">
+<h4 id="org2599704"><span class="section-number-4">2.8.1.</span> Lists</h4>
+<div class="outline-text-4" id="text-2-8-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">enumitem</span>}
+<span style="color: #531ab6; font-weight: bold;">\newenvironment</span>{<span style="color: #721045;">Enumerate</span>}{<span style="color: #721045; font-weight: bold;">\begin</span><span style="color: #721045;">{enumerate}[nosep]</span>}{<span style="color: #721045; font-weight: bold;">\end</span><span style="color: #721045;">{enumerate}</span>}
+<span style="color: #531ab6; font-weight: bold;">\newenvironment</span>{<span style="color: #721045;">Itemize</span>}{<span style="color: #721045; font-weight: bold;">\begin</span><span style="color: #721045;">{itemize}[nosep]</span>}{<span style="color: #721045; font-weight: bold;">\end</span><span style="color: #721045;">{itemize}</span>}
+<span style="color: #531ab6; font-weight: bold;">\newenvironment</span>{<span style="color: #721045;">Description</span>}{<span style="color: #721045; font-weight: bold;">\begin</span><span style="color: #721045;">{description}[nosep]</span>}{<span style="color: #721045; font-weight: bold;">\end</span><span style="color: #721045;">{description}</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9289fa0" class="outline-4">
+<h4 id="org9289fa0"><span class="section-number-4">2.8.2.</span> Float Parameters</h4>
+<div class="outline-text-4" id="text-2-8-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\topfraction</span>}{<span style="color: #721045;">.95</span>}
+<span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\bottomfraction</span>}{<span style="color: #721045;">.95</span>}
+<span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\textfraction</span>}{<span style="color: #721045;">0.1</span>}
+<span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\floatpagefraction</span>}{<span style="color: #721045;">0.8</span>}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd344f12" class="outline-4">
+<h4 id="orgd344f12"><span class="section-number-4">2.8.3.</span> Headings</h4>
+<div class="outline-text-4" id="text-2-8-3">
+</div>
+<ol class="org-ol">
+<li><a id="org550b906"></a>section<br />
+<div class="outline-text-5" id="text-2-8-3-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">section: Uppercase only for text</span>
+<span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\</span><span style="color: #721045; font-weight: bold;">section</span>}
+{<span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">  </span><span style="color: #721045; font-weight: bold;">\@startsection</span><span style="color: #721045;">{section}{1}{0mm}</span>
+<span style="color: #721045;">  {2.0ex plus 0.8ex minus .1ex}{1.0ex plus .2ex}</span>
+<span style="color: #721045;">  {</span><span style="color: #721045; font-weight: bold;">\normalfont</span><span style="color: #721045; font-weight: bold;">\large</span><span style="color: #721045; font-weight: bold;">\bfseries</span><span style="color: #721045; font-weight: bold;">\mathversion</span><span style="color: #721045;">{bold}</span><span style="color: #721045; font-weight: bold;">\centering\MakeTextUppercase</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+}<span style="color: #7f0000; font-style: italic;">%</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org4c89013"></a>subsection<br />
+<div class="outline-text-5" id="text-2-8-3-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subsection</span>
+{<span style="color: #7f0000; font-size: 121%; font-weight: bold; font-style: italic;">%</span>
+<span style="color: #721045; font-size: 121%; font-weight: bold;">  </span><span style="color: #721045; font-size: 121%; font-weight: bold;">\@startsection</span><span style="color: #721045; font-size: 121%; font-weight: bold;">{subsection}{2}{</span><span style="color: #721045; font-size: 121%; font-weight: bold;">\z@</span><span style="color: #721045; font-size: 121%; font-weight: bold;">}</span>
+<span style="color: #721045; font-size: 121%; font-weight: bold;">  {1.4ex plus .8ex minus .17ex}{0.8ex plus .17ex}</span>
+<span style="color: #721045; font-size: 121%; font-weight: bold;">  {</span><span style="color: #721045; font-size: 121%; font-weight: bold;">\normalfont</span><span style="color: #721045; font-size: 121%; font-weight: bold;">\large</span><span style="color: #721045; font-size: 121%; font-weight: bold; font-style: italic;">\itshape</span><span style="color: #721045; font-size: 121%; font-weight: bold;">}</span><span style="color: #7f0000; font-size: 121%; font-weight: bold; font-style: italic;">%</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org22ceedf"></a>subsubsection<br />
+<div class="outline-text-5" id="text-2-8-3-3">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subsubsection</span>
+{<span style="color: #7f0000; font-size: 110%; font-weight: bold; font-style: italic;">%</span>
+<span style="color: #721045; font-size: 110%; font-weight: bold;">  </span><span style="color: #721045; font-size: 110%; font-weight: bold;">\@startsection</span><span style="color: #721045; font-size: 110%; font-weight: bold;">{subsubsection}{3}{</span><span style="color: #721045; font-size: 110%; font-weight: bold;">\parindent</span><span style="color: #721045; font-size: 110%; font-weight: bold;">}</span>
+<span style="color: #721045; font-size: 110%; font-weight: bold;">  {2.5ex plus .7ex minus .17ex}{-1em}</span>
+<span style="color: #721045; font-size: 110%; font-weight: bold;">  {</span><span style="color: #721045; font-size: 110%; font-weight: bold;">\normalfont</span><span style="color: #721045; font-size: 110%; font-weight: bold;">\normalsize</span><span style="color: #721045; font-size: 110%; font-weight: bold;">\bfseries</span><span style="color: #721045; font-size: 110%; font-weight: bold;">}</span><span style="color: #7f0000; font-size: 110%; font-weight: bold; font-style: italic;">%</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org7e02acc"></a>paragraph<br />
+<div class="outline-text-5" id="text-2-8-3-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\paragraph</span>
+{<span style="color: #7f0000; font-weight: bold; font-style: italic;">%</span>
+<span style="color: #721045; font-weight: bold;">  </span><span style="color: #721045; font-weight: bold;">\@startsection</span><span style="color: #721045; font-weight: bold;">{paragraph}{4}{</span><span style="color: #721045; font-weight: bold;">\z@</span><span style="color: #721045; font-weight: bold;">}</span>
+<span style="color: #721045; font-weight: bold;">  {2.5ex plus .7ex minus .17ex}{-1em}</span>
+<span style="color: #721045; font-weight: bold;">  {</span><span style="color: #721045; font-weight: bold;">\normalfont</span><span style="color: #721045; font-weight: bold;">\normalsize</span><span style="color: #721045; font-weight: bold; font-style: italic;">\itshape</span><span style="color: #721045; font-weight: bold;">}</span><span style="color: #7f0000; font-weight: bold; font-style: italic;">%</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org7a7e77e"></a>subparagraph<br />
+<div class="outline-text-5" id="text-2-8-3-5">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subparagraph</span>
+{<span style="color: #7f0000; font-weight: bold; font-style: italic;">%</span>
+<span style="color: #721045; font-weight: bold;">  </span><span style="color: #721045; font-weight: bold;">\@startsection</span><span style="color: #721045; font-weight: bold;">{subparagraph}{4}{</span><span style="color: #721045; font-weight: bold;">\parindent</span><span style="color: #721045; font-weight: bold;">}</span>
+<span style="color: #721045; font-weight: bold;">  {2.25ex plus .7ex minus .17ex}{-1em}</span>
+<span style="color: #721045; font-weight: bold;">  {</span><span style="color: #721045; font-weight: bold;">\normalfont</span><span style="color: #721045; font-weight: bold;">\normalsize</span><span style="color: #721045; font-weight: bold;">\bfseries</span><span style="color: #721045; font-weight: bold;">}</span><span style="color: #7f0000; font-weight: bold; font-style: italic;">%</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orga2f334e"></a>secnumdepth<br />
+<div class="outline-text-5" id="text-2-8-3-6">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\setcounter</span>{<span style="color: #005e8b;">secnumdepth</span>}{<span style="color: #005e8b;">0</span>}
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org32d6c05" class="outline-4">
+<h4 id="org32d6c05"><span class="section-number-4">2.8.4.</span> Title</h4>
+<div class="outline-text-4" id="text-2-8-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">This definition of </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\maketitle</span><span style="color: #7f0000; font-style: italic;"> taken from article.sty, and has been</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">somewhat modified.</span>
+
+<span style="color: #531ab6; font-weight: bold;">\def</span><span style="color: #531ab6; font-weight: bold;">\maketitle</span>{<span style="color: #531ab6; font-weight: bold;">\par</span>
+  <span style="color: #531ab6; font-weight: bold;">\begingroup</span>
+  <span style="color: #531ab6; font-weight: bold;">\def\thefootnote</span>{<span style="color: #531ab6; font-weight: bold;">\fnsymbol</span>{<span style="color: #005e8b;">footnote</span>}}
+  <span style="color: #531ab6; font-weight: bold;">\def\@makefnmark</span>{<span style="color: #531ab6; font-weight: bold;">\hbox</span>
+    to 5pt{<span style="color: #0000b0;">$</span><span style="color: #8f0075; font-weight: bold;">^{\@thefnmark}</span><span style="color: #0000b0;">$</span><span style="color: #531ab6; font-weight: bold;">\hss</span>}}
+  <span style="color: #531ab6; font-weight: bold;">\twocolumn</span>[<span style="color: #531ab6; font-weight: bold;">\@maketitle</span>]
+  <span style="color: #531ab6; font-weight: bold;">\@thanks</span>
+  <span style="color: #531ab6; font-weight: bold;">\endgroup</span>
+  <span style="color: #884900; font-weight: bold;">\enlargethispage</span>{<span style="color: #531ab6; font-weight: bold;">\jac@copyrightspace</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\setcounter</span>{<span style="color: #005e8b;">footnote</span>}{<span style="color: #005e8b;">0</span>}
+  <span style="color: #531ab6; font-weight: bold;">\let</span><span style="color: #531ab6; font-weight: bold;">\maketitle</span><span style="color: #531ab6; font-weight: bold;">\relax</span>
+  <span style="color: #531ab6; font-weight: bold;">\let\@maketitle\relax</span>
+  <span style="color: #531ab6; font-weight: bold;">\gdef\@thanks</span>{}<span style="color: #531ab6; font-weight: bold;">\gdef\@author</span>{}<span style="color: #531ab6; font-weight: bold;">\gdef\@title</span>{}<span style="color: #531ab6; font-weight: bold;">\let</span><span style="color: #884900; font-weight: bold;">\</span><span style="color: #531ab6; font-weight: bold;">thanks</span><span style="color: #531ab6; font-weight: bold;">\relax</span>}
+
+<span style="color: #531ab6; font-weight: bold;">\newlength</span>{<span style="color: #721045; font-weight: bold;">\titleblockheight</span>}       <span style="color: #7f0000; font-style: italic;">% so user can change it if need be</span>
+<span style="color: #531ab6; font-weight: bold;">\setlength</span>{<span style="color: #005e8b; font-weight: bold;">\titleblockheight</span>}{<span style="color: #005e8b;">3.5cm</span>}
+
+<span style="color: #531ab6; font-weight: bold;">\newlength</span><span style="color: #721045; font-weight: bold;">\titleblockstartskip</span>
+<span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\titleblockstartskip</span>{<span style="color: #005e8b;">3pt</span>}
+
+
+<span style="color: #531ab6; font-weight: bold;">\newlength</span><span style="color: #721045; font-weight: bold;">\titleblockmiddleskip</span>
+<span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\titleblockmiddleskip</span>{<span style="color: #005e8b;">1em</span>}
+
+<span style="color: #531ab6; font-weight: bold;">\newlength</span><span style="color: #721045; font-weight: bold;">\titleblockendskip</span>
+<span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\titleblockendskip</span>{<span style="color: #005e8b;">1em</span>}
+
+
+<span style="color: #531ab6; font-weight: bold;">\def\@maketitle</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\vskip</span> <span style="color: #531ab6; font-weight: bold;">\titleblockstartskip</span> <span style="color: #531ab6; font-weight: bold;">\centering</span>
+  {<span style="color: #531ab6; font-weight: bold;">\Large</span><span style="color: #005f5f; font-weight: bold;">\bfseries</span><span style="color: #005f5f; font-weight: bold;"> </span><span style="color: #005f5f; font-weight: bold;">\MakeTextUppercase</span><span style="color: #005f5f; font-weight: bold;">{</span><span style="color: #005f5f; font-weight: bold;">\@title</span><span style="color: #005f5f; font-weight: bold;">} </span><span style="color: #005f5f; font-weight: bold;">\par</span>}
+  <span style="color: #531ab6; font-weight: bold;">\vskip</span> <span style="color: #531ab6; font-weight: bold;">\titleblockmiddleskip</span>               <span style="color: #7f0000; font-style: italic;">% Vertical space after title.</span>
+  {<span style="color: #531ab6; font-weight: bold;">\large</span><span style="color: #531ab6; font-weight: bold;">\begin</span><span style="color: #005f5f; font-weight: bold;">{</span><span style="color: #721045; font-weight: bold;">tabular</span><span style="color: #005f5f; font-weight: bold;">}[t]{@{}c@{}}</span><span style="color: #005f5f; font-weight: bold;">\@author</span><span style="color: #005f5f; font-weight: bold;"> </span><span style="color: #531ab6; font-weight: bold;">\end</span><span style="color: #005f5f; font-weight: bold;">{</span><span style="color: #721045; font-weight: bold;">tabular</span><span style="color: #005f5f; font-weight: bold;">}</span><span style="color: #005f5f; font-weight: bold;">\par</span>}
+  <span style="color: #531ab6; font-weight: bold;">\vskip</span> <span style="color: #531ab6; font-weight: bold;">\titleblockendskip</span>}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">The </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\copyrightspace</span><span style="color: #7f0000; font-style: italic;"> command is used to produce a blank space in the first</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">column where a copyright notice may go.  It works by producing</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">with </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\enlargethispage</span><span style="color: #7f0000; font-style: italic;"> and is inserted by </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\maketitle</span><span style="color: #7f0000; font-style: italic;">.</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">The command should be issued in the preamble.</span>
+
+<span style="color: #531ab6; font-weight: bold;">\newcommand</span><span style="color: #721045; font-weight: bold;">\jac@copyrightspace</span>{<span style="color: #721045;">0pt</span>}
+<span style="color: #531ab6; font-weight: bold;">\newcommand</span><span style="color: #721045; font-weight: bold;">\copyrightspace</span>[<span style="color: #005e8b;">1</span>][<span style="color: #005e8b;">1cm</span>]{<span style="color: #721045; font-weight: bold;">\renewcommand\jac@copyrightspace</span><span style="color: #721045;">{-#1}</span>}
+
+<span style="color: #531ab6; font-weight: bold;">\ifboolexpr</span>{bool{@titlepage}}
+  {<span style="color: #531ab6; font-weight: bold;">\renewenvironment</span>{<span style="color: #721045;">abstract</span>}
+    {<span style="color: #721045; font-weight: bold;">\list</span><span style="color: #721045;">{}{</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\leftmargin</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\dimexpr\textwidth</span><span style="color: #005e8b;">/2-0.75</span><span style="color: #005e8b; font-weight: bold;">\columnwidth</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\rightmargin</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\dimexpr</span><span style="color: #005e8b;">-0.75</span><span style="color: #005e8b; font-weight: bold;">\columnwidth</span><span style="color: #005e8b;">-</span><span style="color: #005e8b; font-weight: bold;">\columnsep</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\listparindent</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\parindent</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\itemsep</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\parskip</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\itemindent</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\z@</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\topsep</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\z@</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\parsep</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\parskip</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\partopsep</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\z@</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #721045; font-weight: bold;">\let\makelabel\@gobble</span>
+<span style="color: #721045;">        </span><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #721045;">{</span><span style="color: #005e8b; font-weight: bold;">\labelwidth</span><span style="color: #721045;">}{</span><span style="color: #005e8b; font-weight: bold;">\z@</span><span style="color: #721045;">}</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">        </span><span style="color: #721045; font-weight: bold;">\advance\@listdepth\m@ne</span><span style="color: #721045;">   }</span><span style="color: #7f0000; font-style: italic;">%</span>
+<span style="color: #721045;">    </span><span style="color: #721045; font-weight: bold;">\item</span><span style="color: #721045; font-weight: bold;">\relax</span><span style="color: #721045; font-weight: bold;">\subsection</span><span style="color: #721045; font-weight: bold;">*</span><span style="color: #721045;">{</span><span style="color: #721045; font-size: 121%; font-weight: bold;">Abstract</span><span style="color: #721045;">}</span>}
+    {<span style="color: #721045; font-weight: bold;">\endlist</span><span style="color: #884900; font-weight: bold;">\clearpage</span>}
+  }
+  {<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\renewenvironment</span>{<span style="color: #721045;">abstract</span>}
+    {<span style="color: #721045; font-weight: bold;">\subsection</span><span style="color: #721045; font-weight: bold;">*</span><span style="color: #721045;">{</span><span style="color: #721045; font-size: 121%; font-weight: bold;">Abstract</span><span style="color: #721045;">}</span>}
+    {<span style="color: #721045; font-weight: bold;">\par</span>}
+  }
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc15c5c1" class="outline-3">
+<h3 id="orgc15c5c1"><span class="section-number-3">2.9.</span> biblatex</h3>
+<div class="outline-text-3" id="text-2-9">
+</div>
+<ol class="org-ol">
+<li><a id="orgba1d140"></a>Place doi in the same line <i>if</i> possible<br />
+<div class="outline-text-5" id="text-2-9-0-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newbox\doi@box</span>
+<span style="color: #531ab6; font-weight: bold;">\newskip\lastlinewidth</span>
+<span style="color: #531ab6; font-weight: bold;">\newskip\doiavailablewidth</span>
+<span style="color: #531ab6; font-weight: bold;">\newcount</span> <span style="color: #531ab6; font-weight: bold;">\saveprevgraf</span>
+<span style="color: #531ab6; font-weight: bold;">\def\placedoi</span>#1{<span style="color: #531ab6; font-weight: bold;">\mbox</span>{}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\lastlinewidth</span>=<span style="color: #531ab6; font-weight: bold;">\z@</span>
+  <span style="color: #531ab6; font-weight: bold;">\ifhmode</span>
+    <span style="color: #531ab6; font-weight: bold;">\predisplaypenalty</span>10000<span style="color: #531ab6; font-weight: bold;">\relax</span> <span style="color: #531ab6; font-weight: bold;">\postdisplaypenalty</span>10000<span style="color: #531ab6; font-weight: bold;">\relax</span>
+    <span style="color: #531ab6; font-weight: bold;">\abovedisplayskip</span>-<span style="color: #531ab6; font-weight: bold;">\baselineskip</span>
+    <span style="color: #531ab6; font-weight: bold;">\belowdisplayskip</span>-<span style="color: #531ab6; font-weight: bold;">\baselineskip</span>
+    <span style="color: #531ab6; font-weight: bold;">\abovedisplayshortskip\abovedisplayskip</span>
+    <span style="color: #531ab6; font-weight: bold;">\belowdisplayshortskip\belowdisplayskip</span>
+    <span style="color: #0000b0;">$$</span>
+<span style="color: #0000b0;">    </span><span style="color: #0000b0; font-weight: bold;">\global</span><span style="color: #0000b0;"> </span><span style="color: #0000b0; font-weight: bold;">\lastlinewidth</span><span style="color: #0000b0;">=</span><span style="color: #0000b0; font-weight: bold;">\dimexpr</span><span style="color: #0000b0;"> </span><span style="color: #0000b0; font-weight: bold;">\predisplaysize</span><span style="color: #0000b0;"> -2em </span><span style="color: #0000b0; font-weight: bold;">\relax</span>
+<span style="color: #0000b0;">    $$</span>
+    <span style="color: #531ab6; font-weight: bold;">\saveprevgraf\prevgraf</span>
+    <span style="color: #531ab6; font-weight: bold;">\advance\saveprevgraf</span> by -3
+    <span style="color: #531ab6; font-weight: bold;">\advance\saveprevgraf</span> by -1
+    <span style="color: #531ab6; font-weight: bold;">\prevgraf\saveprevgraf</span>
+  <span style="color: #531ab6; font-weight: bold;">\fi</span>
+  <span style="color: #531ab6; font-weight: bold;">\noindent</span><span style="color: #531ab6; font-weight: bold;">\kern\dimexpr\lastlinewidth</span> -<span style="color: #531ab6; font-weight: bold;">\leftmargin\relax</span>
+  <span style="color: #531ab6; font-weight: bold;">\doiavailablewidth</span>=<span style="color: #531ab6; font-weight: bold;">\dimexpr</span> <span style="color: #531ab6; font-weight: bold;">\hsize</span>-<span style="color: #531ab6; font-weight: bold;">\lastlinewidth</span> <span style="color: #531ab6; font-weight: bold;">\relax</span>
+  <span style="color: #531ab6; font-weight: bold;">\setbox\doi@box</span>=<span style="color: #531ab6; font-weight: bold;">\hbox</span>{#1}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\ifdim\doiavailablewidth</span>&lt;<span style="color: #531ab6; font-weight: bold;">\wd\doi@box</span>
+    <span style="color: #884900; font-weight: bold;">\\</span>
+  <span style="color: #531ab6; font-weight: bold;">\fi</span>
+  <span style="color: #531ab6; font-weight: bold;">\unhbox\doi@box</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org0a2aeba"></a>biblatex style<br />
+<div class="outline-text-5" id="text-2-9-0-2">
+<p>
+If <code>biblatex</code> is not activated:
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">cite</span>}
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Redefine to use smaller fonts</span>
+<span style="color: #531ab6; font-weight: bold;">\def\thebibliography</span>#1{<span style="color: #531ab6; font-weight: bold;">\setlength</span>{<span style="color: #005e8b; font-weight: bold;">\itemsep</span>}{<span style="color: #005e8b;">0pt</span>}<span style="color: #531ab6; font-weight: bold;">\setlength</span>{<span style="color: #005e8b; font-weight: bold;">\parsep</span>}{<span style="color: #005e8b;">0pt</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\ifjacowrefpage</span><span style="color: #884900; font-weight: bold;">\clearpage</span><span style="color: #531ab6; font-weight: bold;">\fi</span>
+  <span style="color: #531ab6; font-weight: bold;">\section</span><span style="color: #531ab6; font-weight: bold;">*</span>{<span style="color: #193668; font-size: 133%; font-weight: bold;">REFERENCES</span><span style="color: #193668; font-size: 133%; font-weight: bold;">\@mkboth</span>
+<span style="color: #193668; font-size: 133%; font-weight: bold;">    {REFERENCES}{REFERENCES}</span>}<span style="color: #005f5f; font-weight: bold;">\small</span><span style="color: #531ab6; font-weight: bold;">\list</span>
+  {[<span style="color: #531ab6; font-weight: bold;">\arabic</span>{<span style="color: #005e8b;">enumi</span>}]}{<span style="color: #531ab6; font-weight: bold;">\settowidth</span><span style="color: #005e8b; font-weight: bold;">\labelwidth</span>{<span style="color: #005e8b;">[#1]</span>}<span style="color: #531ab6; font-weight: bold;">\leftmargin\labelwidth</span>
+    <span style="color: #531ab6; font-weight: bold;">\advance\leftmargin\labelsep</span>
+    <span style="color: #531ab6; font-weight: bold;">\usecounter</span>{enumi}}
+  <span style="color: #531ab6; font-weight: bold;">\def</span><span style="color: #884900; font-weight: bold;">\newblock</span>{<span style="color: #531ab6; font-weight: bold;">\hskip</span> .11em plus .33em minus .07em}
+  <span style="color: #531ab6; font-weight: bold;">\sloppy\clubpenalty</span>4000<span style="color: #531ab6; font-weight: bold;">\widowpenalty</span>4000
+  <span style="color: #531ab6; font-weight: bold;">\sfcode</span>`\.=1000<span style="color: #531ab6; font-weight: bold;">\relax</span>}
+<span style="color: #531ab6; font-weight: bold;">\let\endthebibliography</span>=<span style="color: #531ab6; font-weight: bold;">\endlist</span>
+</pre>
+</div>
+
+<p>
+Otherwise,
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgd950ecb"></a>Import biblatex<br />
+<ol class="org-ol">
+<li><a id="org888595c"></a>v2.00<br />
+<div class="outline-text-7" id="text-2-9-0-2-1-1">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">style=ieee,sorting=none,giveninits=true,doi=false,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org2dbd931"></a>v2.1<br />
+<div class="outline-text-7" id="text-2-9-0-2-1-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">style=ieee,sorting=none,giveninits=true,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgdab95d3"></a>v2.2<br />
+<div class="outline-text-7" id="text-2-9-0-2-1-3">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">bibstyle=ieee,citestyle=numeric-comp,dashed=false,sorting=none,giveninits=true,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org2982350"></a>bib macros<br />
+<div class="outline-text-6" id="text-2-9-0-2-2">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewbibmacro</span>*{url+urldate}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\iffieldundef</span>{url}
+    {}
+    {<span style="color: #531ab6; font-weight: bold;">\printfield</span>{url}<span style="color: #7f0000; font-style: italic;">%</span>
+      <span style="color: #531ab6; font-weight: bold;">\nopunct</span>
+    }<span style="color: #7f0000; font-style: italic;">%</span>
+  }<span style="color: #7f0000; font-style: italic;">%</span>
+</pre>
+</div>
+
+<p>
+format venue, event, date without round brackets
+<a href="https://tex.stackexchange.com/questions/446732/biblatex-field-venueeventdate-without-round-brackets">https://tex.stackexchange.com/questions/446732/biblatex-field-venueeventdate-without-round-brackets</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewbibmacro</span>*{event+venue+date}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{eventtitle}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{eventtitleaddon}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{venue}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\setunit</span>*{<span style="color: #531ab6; font-weight: bold;">\addcomma\space</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\printeventdate</span><span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span><span style="color: #7f0000; font-style: italic;">%</span>
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewbibmacro</span>*{volume+number+eid}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{volume}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{number}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span>
+  <span style="color: #531ab6; font-weight: bold;">\printfield</span>{eid}<span style="color: #7f0000; font-style: italic;">%</span>
+}
+</pre>
+</div>
+
+<p>
+print <code>url</code> if no <code>doi</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewbibmacro</span>*{doi+eprint+url}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\addperiod\printfield</span>{doi}<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\newunit</span><span style="color: #884900; font-weight: bold;">\newblock</span><span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\iftoggle</span>{bbx:eprint}{<span style="color: #7f0000; font-style: italic;">%</span>
+      <span style="color: #531ab6; font-weight: bold;">\usebibmacro</span>{eprint}<span style="color: #7f0000; font-style: italic;">%</span>
+    }{}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\newunit</span><span style="color: #884900; font-weight: bold;">\newblock</span><span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\iffieldundef</span>{doi}{<span style="color: #7f0000; font-style: italic;">%</span>
+        <span style="color: #531ab6; font-weight: bold;">\usebibmacro</span>{url+urldate}}<span style="color: #7f0000; font-style: italic;">%</span>
+      {}<span style="color: #7f0000; font-style: italic;">%</span>
+    }
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgac64e37"></a>field formats<br />
+<div class="outline-text-6" id="text-2-9-0-2-3">
+<p>
+<code>url</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareFieldFormat</span>{url}{<span style="color: #531ab6; font-weight: bold;">\url</span>{#1}}
+</pre>
+</div>
+
+<p>
+<code>eprint</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareFieldFormat</span>{eprint}{#1}
+</pre>
+</div>
+
+<p>
+format <code>doi</code>: as part of the link using the same font
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareFieldFormat</span>{doi}{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\ifhyperref</span>
+    {<span style="color: #531ab6; font-weight: bold;">\href</span>{https://doi.org/#1}{<span style="color: #531ab6; font-weight: bold;">\nolinkurl</span>{#1}}}
+    {<span style="color: #531ab6; font-weight: bold;">\placedoi</span>{<span style="color: #531ab6; font-weight: bold;">\nolinkurl</span>{doi:#1}}}<span style="color: #7f0000; font-style: italic;">%</span>
+  }
+</pre>
+</div>
+
+<p>
+<code>eid</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareFieldFormat</span>{eid}{<span style="color: #7f0000; font-style: italic;">%</span>
+  {paper #1}<span style="color: #7f0000; font-style: italic;">%</span>
+}
+</pre>
+</div>
+
+<p>
+format ISSN like URLs
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareFieldFormat</span>{issn}{<span style="color: #7f0000; font-style: italic;">%</span>
+  {<span style="color: #531ab6; font-weight: bold;">\texttt</span>{<span style="color: #005f5f; font-weight: bold;">ISSN:#1</span>}}<span style="color: #7f0000; font-style: italic;">%</span>
+}
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org71852d1"></a>bib extras<br />
+<div class="outline-text-6" id="text-2-9-0-2-4">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">%% </span><span style="color: #7f0000; font-style: italic;">when to activate this? Paper format acus/letter</span>
+<span style="color: #531ab6; font-weight: bold;">\DefineBibliographyExtras</span>{<span style="color: #0000b0;">american</span>}{<span style="color: #0000b0; font-weight: bold;">\stdpunctuation</span>} <span style="color: #7f0000; font-style: italic;">% mod</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">Drop urls for article and inproceedings entries</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">2.7</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">check https://tex.stackexchange.com/questions/6743/biblatex-changing-the-order-of-entries</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">https://tex.stackexchange.com/questions/12806/guidelines-for-customizing-biblatex-styles/13076#13076</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">https://tex.stackexchange.com/questions/10203/biblatex-putting-thin-spaces-between-initials</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">https://tex.stackexchange.com/questions/560346/how-to-suppress-annotation-field-from-bbl-file-in-biblatex</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">https://tex.stackexchange.com/questions/496995/advanced-introduction-to-biblatex-coding-guidelines-for-database</span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">-------------------------------------</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgcc3263d"></a>bib customisation<br />
+<div class="outline-text-6" id="text-2-9-0-2-5">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">if BibLaTeX is used</span>
+<span style="color: #7f0000; font-style: italic;">% </span>
+<span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">modify macros so the formatted output corresponds to JACoW's idea of IEEEtran</span>
+</pre>
+</div>
+
+<p>
+set vertical distance between items
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\bibitemsep</span>{<span style="color: #005e8b;">3pt plus 1.5pt minus 0.5pt</span>}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\setlength\bibitemsep</span><span style="color: #7f0000; font-style: italic;">{0pt}</span>
+<span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\bibparsep</span>{<span style="color: #005e8b;">0pt</span>}
+<span style="color: #531ab6; font-weight: bold;">\setlength</span><span style="color: #005e8b; font-weight: bold;">\biblabelsep</span>{<span style="color: #005e8b;">5pt</span>}
+</pre>
+</div>
+
+<p>
+remove stretchability from biblatex URLs/DOIs
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\toks</span>0<span style="color: #531ab6; font-weight: bold;">\expandafter</span>{<span style="color: #531ab6; font-weight: bold;">\biburlsetup</span>}<span style="color: #531ab6; font-weight: bold;">\edef\biburlsetup</span>{<span style="color: #531ab6; font-weight: bold;">\the\toks</span>0 <span style="color: #531ab6; font-weight: bold;">\Urlmuskip</span> =0mu<span style="color: #531ab6; font-weight: bold;">\relax</span>}
+</pre>
+</div>
+
+<p>
+Removing period after DOI
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #531ab6; font-weight: bold;">*</span>{<span style="color: #721045; font-weight: bold;">\finentrypunct</span>}{<span style="color: #721045; font-weight: bold;">\ifboolexpr</span><span style="color: #721045;">{togl {bbx:doi} and not test {</span><span style="color: #721045; font-weight: bold;">\iffieldundef</span><span style="color: #721045;">{doi}}}{}{</span><span style="color: #721045; font-weight: bold;">\addperiod</span><span style="color: #721045;">}</span>}
+</pre>
+</div>
+
+<p>
+make sure that there is no break between initial and lastname and thinspaces between muliple initials
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #531ab6; font-weight: bold;">*</span><span style="color: #721045; font-weight: bold;">\bibnamedelimd</span>{<span style="color: #721045;">~</span>}
+<span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\bibinitdelim</span>{<span style="color: #721045; font-weight: bold;">\addnbthinspace</span>}
+</pre>
+</div>
+
+<p>
+Clean up the bibtex rather than editing it for extensive JACoW BibTeX records
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\AtEveryBibitem</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\clearlist</span>{address}
+  <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{date}
+  <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{eprint}
+  <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{isbn}
+  <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{issn}
+  <span style="color: #7f0000; font-style: italic;">% </span>
+  <span style="color: #7f0000; font-style: italic;">% use/print "note" if "booktitle" is not given: example "data for this conference"</span>
+  <span style="color: #7f0000; font-style: italic;">% </span>
+  <span style="color: #531ab6; font-weight: bold;">\iffieldundef</span>{booktitle}{}{<span style="color: #531ab6; font-weight: bold;">\clearfield</span>{note}}
+    <span style="color: #531ab6; font-weight: bold;">\clearlist</span>{location}
+    <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{month}
+    <span style="color: #531ab6; font-weight: bold;">\clearfield</span>{series}
+    <span style="color: #531ab6; font-weight: bold;">\ifentrytype</span>{book}{}{<span style="color: #7f0000; font-style: italic;">% Remove publisher and editor except for books</span>
+        <span style="color: #531ab6; font-weight: bold;">\clearlist</span>{publisher}
+        <span style="color: #531ab6; font-weight: bold;">\clearname</span>{editor}
+      }
+    }
+</pre>
+</div>
+
+<p>
+Set tolerance before the environment.
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\AtBeginBibliography</span>{<span style="color: #531ab6; font-weight: bold;">\small</span><span style="color: #005f5f; font-weight: bold;">\clubpenalty</span><span style="color: #005f5f; font-weight: bold;">4000</span><span style="color: #005f5f; font-weight: bold;">\widowpenalty</span><span style="color: #005f5f; font-weight: bold;">4000</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ifjacowrefpage\preto\blx@bibliography</span>{<span style="color: #884900; font-weight: bold;">\clearpage</span>}<span style="color: #531ab6; font-weight: bold;">\fi</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgdd571e6"></a>Penalties<br />
+<div class="outline-text-5" id="text-2-9-0-3">
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\sloppy</span>
+<span style="color: #531ab6; font-weight: bold;">\clubpenalty</span>10000<span style="color: #531ab6; font-weight: bold;">\widowpenalty</span>10000
+<span style="color: #531ab6; font-weight: bold;">\flushbottom</span>
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="orgcfa06e4"></a>Bug Fixings<br />
+<div class="outline-text-5" id="text-2-9-0-4">
+<p>
+avoid bug of fixltx2e:
+<a href="http://www.latex-project.org/cgi-bin/ltxbugs2html?pr=latex/4023">http://www.latex-project.org/cgi-bin/ltxbugs2html?pr=latex/4023</a>
+</p>
+<div class="org-src-container">
+<pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\RequirePackage</span><span style="color: #7f0000; font-style: italic;">{fixltx2e}%</span>
+<span style="color: #531ab6; font-weight: bold;">\def\@outputdblcol</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+  <span style="color: #531ab6; font-weight: bold;">\if@firstcolumn</span>
+    <span style="color: #531ab6; font-weight: bold;">\global\@firstcolumnfalse</span>
+    <span style="color: #531ab6; font-weight: bold;">\global\setbox\@leftcolumn\copy\@outputbox</span>
+    <span style="color: #531ab6; font-weight: bold;">\splitmaxdepth\maxdimen</span>
+    <span style="color: #531ab6; font-weight: bold;">\vbadness\maxdimen</span>
+    <span style="color: #531ab6; font-weight: bold;">\setbox\@outputbox\vbox</span>{<span style="color: #531ab6; font-weight: bold;">\unvbox\@outputbox\unskip</span>}<span style="color: #7f0000; font-style: italic;">%new</span>
+    <span style="color: #531ab6; font-weight: bold;">\setbox\@outputbox\vsplit\@outputbox</span> to<span style="color: #531ab6; font-weight: bold;">\maxdimen</span>
+    <span style="color: #531ab6; font-weight: bold;">\toks@\expandafter</span>{<span style="color: #531ab6; font-weight: bold;">\topmark</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\xdef\@firstcoltopmark</span>{<span style="color: #531ab6; font-weight: bold;">\the\toks@</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\toks@\expandafter</span>{<span style="color: #531ab6; font-weight: bold;">\splitfirstmark</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\xdef\@firstcolfirstmark</span>{<span style="color: #531ab6; font-weight: bold;">\the\toks@</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\ifx\@firstcolfirstmark\@empty</span>
+      <span style="color: #531ab6; font-weight: bold;">\global\let\@setmarks\relax</span>
+    <span style="color: #531ab6; font-weight: bold;">\else</span>
+      <span style="color: #531ab6; font-weight: bold;">\gdef\@setmarks</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+        <span style="color: #531ab6; font-weight: bold;">\let\firstmark\@firstcolfirstmark</span>
+        <span style="color: #531ab6; font-weight: bold;">\let\topmark\@firstcoltopmark</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\fi</span>
+  <span style="color: #531ab6; font-weight: bold;">\else</span>
+    <span style="color: #531ab6; font-weight: bold;">\global\@firstcolumntrue</span>
+    <span style="color: #531ab6; font-weight: bold;">\setbox\@outputbox\vbox</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+      <span style="color: #531ab6; font-weight: bold;">\hb@xt@\textwidth</span>{<span style="color: #7f0000; font-style: italic;">%</span>
+        <span style="color: #531ab6; font-weight: bold;">\hb@xt@\columnwidth</span>{<span style="color: #531ab6; font-weight: bold;">\box\@leftcolumn</span> <span style="color: #531ab6; font-weight: bold;">\hss</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+        <span style="color: #531ab6; font-weight: bold;">\hfil</span>
+        <span style="color: #531ab6; font-weight: bold;">\vrule</span> <span style="color: #531ab6; font-weight: bold;">\@width\columnseprule</span>
+        <span style="color: #531ab6; font-weight: bold;">\hfil</span>
+        <span style="color: #531ab6; font-weight: bold;">\hb@xt@\columnwidth</span>{<span style="color: #531ab6; font-weight: bold;">\box\@outputbox</span> <span style="color: #531ab6; font-weight: bold;">\hss</span>}}}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\@combinedblfloats</span>
+    <span style="color: #531ab6; font-weight: bold;">\@setmarks</span>
+    <span style="color: #531ab6; font-weight: bold;">\@outputpage</span>
+    <span style="color: #531ab6; font-weight: bold;">\begingroup</span>
+    <span style="color: #531ab6; font-weight: bold;">\@dblfloatplacement</span>
+    <span style="color: #531ab6; font-weight: bold;">\@startdblcolumn</span>
+    <span style="color: #531ab6; font-weight: bold;">\@whilesw\if@fcolmade</span> <span style="color: #531ab6; font-weight: bold;">\fi</span>{<span style="color: #531ab6; font-weight: bold;">\@outputpage\@startdblcolumn</span>}<span style="color: #7f0000; font-style: italic;">%</span>
+    <span style="color: #531ab6; font-weight: bold;">\endgroup</span>
+  <span style="color: #531ab6; font-weight: bold;">\fi</span>
+}
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0f5c29a" class="outline-2">
+<h2 id="org0f5c29a"><span class="section-number-2">3.</span> LaTeX Samples</h2>
+</div>
+
+<div id="outline-container-orgbf6bbb8" class="outline-2">
+<h2 id="orgbf6bbb8"><span class="section-number-2">4.</span> <span class="todo TODO">TODO</span> MS Word</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li><a href="https://python-docx.readthedocs.io/en/latest/">python-docx</a>
+<ul class="org-ul">
+<li>github repository: <a href="https://github.com/python-openxml/python-docx.git">https://github.com/python-openxml/python-docx.git</a></li>
+</ul></li>
+<li><a href="https://docxtpl.readthedocs.io/en/latest/">python-docx-template</a>
+<ul class="org-ul">
+<li>github repository: <a href="https://github.com/elapouya/python-docx-template.git">https://github.com/elapouya/python-docx-template.git</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9f4f355" class="outline-2">
+<h2 id="org9f4f355"><span class="section-number-2">5.</span> <span class="todo TODO">TODO</span> Apach OpenOffice</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li><a href="https://relatorio.readthedocs.io/en/latest/index.html">relatorio</a>
+<ul class="org-ul">
+<li>repository: <a href="https://foss.heptapod.net/tryton/relatorio">https://foss.heptapod.net/tryton/relatorio</a></li>
+</ul></li>
+<li><a href="https://github.com/eea/odfpy/wiki">odfpy</a>
+<ul class="org-ul">
+<li>github repository: <a href="https://github.com/eea/odfpy.git">https://github.com/eea/odfpy.git</a></li>
+</ul></li>
+<li><a href="http://www.openoffice.org/udk/python/python-bridge.html">Python-UNO (Universal Network Objects) bridge</a></li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org55c30fe" class="outline-2">
+<h2 id="org55c30fe"><span class="section-number-2">6.</span> Future Work</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgf382942" class="outline-3">
+<h3 id="orgf382942"><span class="section-number-3">6.1.</span> Bugs</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> <code>:padline</code> does not seem to work</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org038bd72" class="outline-3">
+<h3 id="org038bd72"><span class="section-number-3">6.2.</span> Smart Documentation</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Try to automatically wrap the version, author and date information around the change logs. Need to dig how to achieve that without overriding functions in the <code>ob tangle.el</code> file.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #000000;">(</span>nth <span style="color: #0000b0;">4</span> <span style="color: #dd22dd;">(</span>org-heading-components<span style="color: #dd22dd;">)</span><span style="color: #000000;">)</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #000000;">(</span><span style="color: #531ab6; font-weight: bold;">let</span> <span style="color: #dd22dd;">(</span><span style="color: #008899;">(</span>author-date <span style="color: #972500;">(</span>concat <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Author"</span><span style="color: #808000;">)</span> <span style="color: #3548cf;">", "</span> <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Date"</span><span style="color: #808000;">)</span><span style="color: #972500;">)</span><span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span>
+  <span style="color: #dd22dd;">(</span>concat <span style="color: #008899;">(</span>make-string <span style="color: #972500;">(</span>- <span style="color: #0000b0;">79</span> <span style="color: #808000;">(</span>length author-date<span style="color: #808000;">)</span><span style="color: #972500;">)</span> ?=<span style="color: #008899;">)</span> author-date<span style="color: #dd22dd;">)</span><span style="color: #000000;">)</span>
+</pre>
+</div>
+
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><span style="color: #000000;">(</span><span style="color: #531ab6; font-weight: bold;">let</span> <span style="color: #dd22dd;">(</span><span style="color: #008899;">(</span>author-date <span style="color: #972500;">(</span>concat <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Author"</span><span style="color: #808000;">)</span> <span style="color: #3548cf;">", "</span> <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Date"</span><span style="color: #808000;">)</span><span style="color: #972500;">)</span><span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span>
+  <span style="color: #dd22dd;">(</span>substring <span style="color: #008899;">(</span>concat <span style="color: #972500;">(</span>make-string <span style="color: #0000b0;">79</span> ?=<span style="color: #972500;">)</span> author-date<span style="color: #008899;">)</span>
+             <span style="color: #008899;">(</span>length author-date<span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span><span style="color: #000000;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2370ad5" class="outline-3">
+<h3 id="org2370ad5"><span class="section-number-3">6.3.</span> Tips</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Put the following to the header to get the <code>solarized</code> theme of the HTML export.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span style="color: #005077;">INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:<a href="http://thomasf.github.io/solarized-css/org-info.min.js">http://thomasf.github.io/solarized-css/org-info.min.js</a></span>
+<span style="color: #005077;">HTML_HEAD: &lt;link rel="stylesheet" type="text/css" href="<a href="http://thomasf.github.io/solarized-css/solarized-light.min.css">http://thomasf.github.io/solarized-css/solarized-light.min.css</a>" /&gt;</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: John Jowett (CERN), Michel Goossens (CERN), Martin Comyn (TRIUMF), John Poole (CERN), Todd Satogata (BNL), Ulrike Fischer, Volker RW Schaa (GSI), Zhichu Chen (SSRF)</p>
+<p class="date">Created: 2023-03-20 Mon 14:47</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
