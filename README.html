@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-03-20 Mon 14:47 -->
+<!-- 2023-03-21 Tue 07:18 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>JACoW Template</title>
@@ -23,83 +23,83 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgce48ec7">1. <span class="todo TODO">TODO</span> Introduction</a></li>
-<li><a href="#org6f26b0f">2. LaTeX Class</a>
+<li><a href="#org9717acf">1. <span class="todo TODO">TODO</span> Introduction</a></li>
+<li><a href="#orgb1ee54e">2. LaTeX Class</a>
 <ul>
-<li><a href="#org3fb1aa5">2.1. Master File</a></li>
-<li><a href="#org9db72f1">2.2. Descriptions</a>
+<li><a href="#org1c83598">2.1. Master File</a></li>
+<li><a href="#org251ea87">2.2. Descriptions</a>
 <ul>
-<li><a href="#orgc06f00e">2.2.1. Purpose</a></li>
-<li><a href="#org6521edc">2.2.2. License</a></li>
-<li><a href="#org53df39b">2.2.3. Maintainer</a></li>
-<li><a href="#org0814bdd">2.2.4. Files</a></li>
+<li><a href="#org05b257f">2.2.1. Purpose</a></li>
+<li><a href="#orge03b10f">2.2.2. License</a></li>
+<li><a href="#orgf30b2af">2.2.3. Maintainer</a></li>
+<li><a href="#orgd8f3e10">2.2.4. Files</a></li>
 </ul>
 </li>
-<li><a href="#orgdfee6c5">2.3. Changelog</a></li>
-<li><a href="#orgc65dab4">2.4. Identification</a></li>
-<li><a href="#org70eed18">2.5. Banner</a></li>
-<li><a href="#orgd27dadf">2.6. Options</a>
+<li><a href="#org802bb8c">2.3. Changelog</a></li>
+<li><a href="#org09d0e66">2.4. Identification</a></li>
+<li><a href="#orgb9af34d">2.5. Banner</a></li>
+<li><a href="#org7549eaf">2.6. Options</a>
 <ul>
-<li><a href="#org3f8dcb2">2.6.1. geometry</a></li>
-<li><a href="#org809efe9">2.6.2. Frame</a></li>
-<li><a href="#org10637a2">2.6.3. biblatex</a></li>
-<li><a href="#org62800a3">2.6.4. refpage</a></li>
-<li><a href="#orgf59af6b">2.6.5. Pass Options</a></li>
-<li><a href="#org26cfe99">2.6.6. Paper Size</a></li>
+<li><a href="#org1e684a8">2.6.1. geometry</a></li>
+<li><a href="#orgd5776a4">2.6.2. Frame</a></li>
+<li><a href="#orgc936db1">2.6.3. biblatex</a></li>
+<li><a href="#org42a76d3">2.6.4. refpage</a></li>
+<li><a href="#org296a31f">2.6.5. Pass Options</a></li>
+<li><a href="#orga22b7bd">2.6.6. Paper Size</a></li>
 </ul>
 </li>
-<li><a href="#org04003af">2.7. Packages</a>
+<li><a href="#orgfde6edc">2.7. Packages</a>
 <ul>
-<li><a href="#orgf726f5e">2.7.1. Load Class</a></li>
-<li><a href="#org5237821">2.7.2. fix-cm   Permit Computer Modern fonts at arbitrary sizes.</a></li>
-<li><a href="#orgc18cbf7">2.7.3. flushend   Balancing columns at last page</a></li>
-<li><a href="#org0031ca8">2.7.4. Confliction between lineno and minted</a></li>
-<li><a href="#org53de976">2.7.5. etoolbox   e-TeX tools for LaTeX</a></li>
-<li><a href="#org67b801a">2.7.6. iftex   Am I running under pdfTeX, XeTeX or LuaTeX?</a></li>
-<li><a href="#org881ba32">2.7.7. textcase   Case conversion ignoring mathematics, etc</a></li>
-<li><a href="#org7a71f72">2.7.8. siunitx   A comprehensive (SI) units package</a></li>
-<li><a href="#org5d4ed64">2.7.9. graphicx   Enhanced support for graphics</a></li>
-<li><a href="#org6f4d1ed">2.7.10. booktabs   Publication quality tables in LaTeX</a></li>
-<li><a href="#org301b007">2.7.11. caption   Customising captions in floating environments</a></li>
-<li><a href="#orgaf3900a">2.7.12. xcolor   Driver-independent color extensions for LaTeX and pdfLaTeX</a></li>
-<li><a href="#orgb1db26a">2.7.13. amsmath   AMS mathematical facilities for LaTeX</a></li>
-<li><a href="#org8bf941b">2.7.14. csquotes   Context sensitive quotation facilities</a></li>
-<li><a href="#orga99b95f">2.7.15. geometry   Flexible and complete interface to document dimensions</a></li>
-<li><a href="#orgda33f1c">2.7.16. footmisc   A range of footnote options</a></li>
-<li><a href="#orgfd6fc0d">2.7.17. url   Verbatim with URL-sensitive line breaks</a></li>
-<li><a href="#org960a07e">2.7.18. newtxtt   Enhancement of typewriter fonts from newtx</a></li>
-<li><a href="#org8b428ad">2.7.19. URL Fonts</a></li>
-<li><a href="#orgaadc040">2.7.20. XeTeX &amp; LuaTeX</a></li>
-<li><a href="#org18c78bf">2.7.21. microtype   Subliminal refinements towards typographical perfection</a></li>
+<li><a href="#org6a37e23">2.7.1. Load Class</a></li>
+<li><a href="#orgb6ae009">2.7.2. fix-cm — Permit Computer Modern fonts at arbitrary sizes.</a></li>
+<li><a href="#org34af3b3">2.7.3. flushend — Balancing columns at last page</a></li>
+<li><a href="#orgee64d6b">2.7.4. Confliction between lineno and minted</a></li>
+<li><a href="#org380924b">2.7.5. etoolbox — e-TeX tools for LaTeX</a></li>
+<li><a href="#orgcece514">2.7.6. iftex — Am I running under pdfTeX, XeTeX or LuaTeX?</a></li>
+<li><a href="#orge664271">2.7.7. textcase — Case conversion ignoring mathematics, etc</a></li>
+<li><a href="#org8827907">2.7.8. siunitx — A comprehensive (SI) units package</a></li>
+<li><a href="#orgd527b87">2.7.9. graphicx — Enhanced support for graphics</a></li>
+<li><a href="#org727f14d">2.7.10. booktabs — Publication quality tables in LaTeX</a></li>
+<li><a href="#org84277b2">2.7.11. caption — Customising captions in floating environments</a></li>
+<li><a href="#orgbf40351">2.7.12. xcolor — Driver-independent color extensions for LaTeX and pdfLaTeX</a></li>
+<li><a href="#orgff23468">2.7.13. amsmath — AMS mathematical facilities for LaTeX</a></li>
+<li><a href="#org8e06aaa">2.7.14. csquotes — Context sensitive quotation facilities</a></li>
+<li><a href="#orgb68054e">2.7.15. geometry — Flexible and complete interface to document dimensions</a></li>
+<li><a href="#orgb032f13">2.7.16. footmisc — A range of footnote options</a></li>
+<li><a href="#org939eeee">2.7.17. url — Verbatim with URL-sensitive line breaks</a></li>
+<li><a href="#orgd509eb3">2.7.18. newtxtt — Enhancement of typewriter fonts from newtx</a></li>
+<li><a href="#org2d5da5f">2.7.19. URL Fonts</a></li>
+<li><a href="#orgfc10db7">2.7.20. XeTeX &amp; LuaTeX</a></li>
+<li><a href="#orgd4140f5">2.7.21. microtype — Subliminal refinements towards typographical perfection</a></li>
 </ul>
 </li>
-<li><a href="#orgea83aed">2.8. Customisation</a>
+<li><a href="#org1020d7d">2.8. Customisation</a>
 <ul>
-<li><a href="#org2599704">2.8.1. Lists</a></li>
-<li><a href="#org9289fa0">2.8.2. Float Parameters</a></li>
-<li><a href="#orgd344f12">2.8.3. Headings</a></li>
-<li><a href="#org32d6c05">2.8.4. Title</a></li>
+<li><a href="#org1335bb9">2.8.1. Lists</a></li>
+<li><a href="#org0a9334f">2.8.2. Float Parameters</a></li>
+<li><a href="#org587983b">2.8.3. Headings</a></li>
+<li><a href="#org50e87a9">2.8.4. Title</a></li>
 </ul>
 </li>
-<li><a href="#orgc15c5c1">2.9. biblatex</a></li>
+<li><a href="#org0e91144">2.9. biblatex</a></li>
 </ul>
 </li>
-<li><a href="#org0f5c29a">3. LaTeX Samples</a></li>
-<li><a href="#orgbf6bbb8">4. <span class="todo TODO">TODO</span> MS Word</a></li>
-<li><a href="#org9f4f355">5. <span class="todo TODO">TODO</span> Apach OpenOffice</a></li>
-<li><a href="#org55c30fe">6. Future Work</a>
+<li><a href="#orge710382">3. LaTeX Samples</a></li>
+<li><a href="#orgf2be038">4. <span class="todo TODO">TODO</span> MS Word</a></li>
+<li><a href="#orgacb9044">5. <span class="todo TODO">TODO</span> Apach OpenOffice</a></li>
+<li><a href="#org2c4f837">6. Future Work</a>
 <ul>
-<li><a href="#orgf382942">6.1. Bugs</a></li>
-<li><a href="#org038bd72">6.2. Smart Documentation</a></li>
-<li><a href="#org2370ad5">6.3. Tips</a></li>
+<li><a href="#org7a2e2e8">6.1. Bugs</a></li>
+<li><a href="#org1b6894b">6.2. Smart Documentation</a></li>
+<li><a href="#org76a1263">6.3. Tips</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgce48ec7" class="outline-2">
-<h2 id="orgce48ec7"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Introduction</h2>
+<div id="outline-container-org9717acf" class="outline-2">
+<h2 id="org9717acf"><span class="section-number-2">1.</span> <span class="todo TODO">TODO</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 The LaTeX class file is based on <a href="https://github.com/JACoW-org/JACoW_Templates/tree/86bb39f72097d4e2c1df2f0abba496e34e55727b">v2.15</a> of the JACoW template. I run
@@ -119,7 +119,7 @@ git checkout <span style="color: #0000b0;">86bb39f72097d4e2c1df2f0abba496e34e557
 Then run
 </p>
 <div class="org-src-container">
-<pre class="src src-shell" id="org7298904">cat ~/git/jacow/JACoW_Templates/LaTeX/A4/jacow.cls
+<pre class="src src-shell" id="org770cc4f">cat ~/git/jacow/JACoW_Templates/LaTeX/A4/jacow.cls
 </pre>
 </div>
 
@@ -130,12 +130,12 @@ and split emacs horizontally to incrementally copy the original class file into 
 </div>
 
 
-<div id="outline-container-org6f26b0f" class="outline-2">
-<h2 id="org6f26b0f"><span class="section-number-2">2.</span> LaTeX Class</h2>
+<div id="outline-container-orgb1ee54e" class="outline-2">
+<h2 id="orgb1ee54e"><span class="section-number-2">2.</span> LaTeX Class</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3fb1aa5" class="outline-3">
-<h3 id="org3fb1aa5"><span class="section-number-3">2.1.</span> Master File</h3>
+<div id="outline-container-org1c83598" class="outline-3">
+<h3 id="org1c83598"><span class="section-number-3">2.1.</span> Master File</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Put a description of the file:
@@ -168,13 +168,13 @@ Ignore everything after
 </div>
 
 
-<div id="outline-container-org9db72f1" class="outline-3">
-<h3 id="org9db72f1"><span class="section-number-3">2.2.</span> Descriptions</h3>
+<div id="outline-container-org251ea87" class="outline-3">
+<h3 id="org251ea87"><span class="section-number-3">2.2.</span> Descriptions</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
 
-<div id="outline-container-orgc06f00e" class="outline-4">
-<h4 id="orgc06f00e"><span class="section-number-4">2.2.1.</span> Purpose</h4>
+<div id="outline-container-org05b257f" class="outline-4">
+<h4 id="org05b257f"><span class="section-number-4">2.2.1.</span> Purpose</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <div class="org-src-container">
 <pre class="src src-latex">This file has been developed as a common template for papers
@@ -188,8 +188,8 @@ http://jacow.org/
 </div>
 </div>
 
-<div id="outline-container-org6521edc" class="outline-4">
-<h4 id="org6521edc"><span class="section-number-4">2.2.2.</span> License</h4>
+<div id="outline-container-orge03b10f" class="outline-4">
+<h4 id="orge03b10f"><span class="section-number-4">2.2.2.</span> License</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <div class="org-src-container">
 <pre class="src src-latex">This work may be distributed and/or modified under the
@@ -208,8 +208,8 @@ This work has the LPPL maintenance status "maintained".
 </div>
 </div>
 
-<div id="outline-container-org53df39b" class="outline-4">
-<h4 id="org53df39b"><span class="section-number-4">2.2.3.</span> Maintainer</h4>
+<div id="outline-container-orgf30b2af" class="outline-4">
+<h4 id="orgf30b2af"><span class="section-number-4">2.2.3.</span> Maintainer</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <div class="org-src-container">
 <pre class="src src-latex">This Current Maintainer of this work is Volker RW Schaa.
@@ -218,8 +218,8 @@ This work has the LPPL maintenance status "maintained".
 </div>
 </div>
 
-<div id="outline-container-org0814bdd" class="outline-4">
-<h4 id="org0814bdd"><span class="section-number-4">2.2.4.</span> Files</h4>
+<div id="outline-container-orgd8f3e10" class="outline-4">
+<h4 id="orgd8f3e10"><span class="section-number-4">2.2.4.</span> Files</h4>
 <div class="outline-text-4" id="text-2-2-4">
 <div class="org-src-container">
 <pre class="src src-latex">This work consists of the following files
@@ -249,11 +249,11 @@ Mac, ODF). The PDF is included in the template
 </div>
 </div>
 
-<div id="outline-container-orgdfee6c5" class="outline-3">
-<h3 id="orgdfee6c5"><span class="section-number-3">2.3.</span> Changelog</h3>
+<div id="outline-container-org802bb8c" class="outline-3">
+<h3 id="org802bb8c"><span class="section-number-3">2.3.</span> Changelog</h3>
 <div class="outline-text-3" id="text-2-3">
 <div class="org-src-container">
-<pre class="src src-emacs-lisp" id="org1026654"><span style="color: #000000;">(</span><span style="color: #531ab6; font-weight: bold;">let</span> <span style="color: #dd22dd;">(</span><span style="color: #008899;">(</span>author-date <span style="color: #972500;">(</span>concat <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Author"</span><span style="color: #808000;">)</span> <span style="color: #3548cf;">", "</span> <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Date"</span><span style="color: #808000;">)</span><span style="color: #972500;">)</span><span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span>
+<pre class="src src-emacs-lisp" id="org6d8950b"><span style="color: #000000;">(</span><span style="color: #531ab6; font-weight: bold;">let</span> <span style="color: #dd22dd;">(</span><span style="color: #008899;">(</span>author-date <span style="color: #972500;">(</span>concat <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Author"</span><span style="color: #808000;">)</span> <span style="color: #3548cf;">", "</span> <span style="color: #808000;">(</span>org-entry-get nil   <span style="color: #3548cf;">"Date"</span><span style="color: #808000;">)</span><span style="color: #972500;">)</span><span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span>
   <span style="color: #dd22dd;">(</span>substring <span style="color: #008899;">(</span>concat <span style="color: #972500;">(</span>make-string <span style="color: #0000b0;">79</span> ?=<span style="color: #972500;">)</span> author-date<span style="color: #008899;">)</span>
              <span style="color: #008899;">(</span>length author-date<span style="color: #008899;">)</span><span style="color: #dd22dd;">)</span><span style="color: #000000;">)</span>
 </pre>
@@ -262,7 +262,7 @@ Mac, ODF). The PDF is included in the template
 
 
 <ol class="org-ol">
-<li><a id="org0c5b61e"></a>v1.3<br />
+<li><a id="org4a8f849"></a>v1.3<br />
 <div class="outline-text-5" id="text-2-3-0-1">
 <div class="org-src-container">
 <pre class="src src-latex">v0.1 to 1.3 : JAC2000.cls
@@ -276,7 +276,7 @@ this class file over the period 1996 to 2000.
 </div>
 </li>
 
-<li><a id="org808deb5"></a>v1.4<br />
+<li><a id="orge277f17"></a>v1.4<br />
 <div class="outline-text-5" id="text-2-3-0-2">
 <div class="org-src-container">
 <pre class="src src-latex">v1.4 : JAC2001.cls
@@ -288,7 +288,7 @@ first paragraphs after section, subsection and subsubsection headings.
 </div>
 </li>
 
-<li><a id="org711ec5a"></a>v1.5<br />
+<li><a id="orgd8637c7"></a>v1.5<br />
 <div class="outline-text-5" id="text-2-3-0-3">
 <div class="org-src-container">
 <pre class="src src-latex">v1.5 : JAC2003.cls
@@ -300,7 +300,7 @@ templates.                                     Todd Satogata  March 2011
 </div>
 </li>
 
-<li><a id="orge42da36"></a>v1.6<br />
+<li><a id="org2bde5c6"></a>v1.6<br />
 <div class="outline-text-5" id="text-2-3-0-4">
 <div class="org-src-container">
 <pre class="src src-latex">v 1.6 : jacow.cls
@@ -312,7 +312,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org11d5828"></a>v1.7<br />
+<li><a id="org847d563"></a>v1.7<br />
 <div class="outline-text-5" id="text-2-3-0-5">
 <div class="org-src-container">
 <pre class="src src-latex">v 1.7
@@ -326,7 +326,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="orga69b28c"></a>v1.8<br />
+<li><a id="org496804f"></a>v1.8<br />
 <div class="outline-text-5" id="text-2-3-0-6">
 <div class="org-src-container">
 <pre class="src src-latex">v1.8
@@ -337,7 +337,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org4ee290e"></a>v1.9<br />
+<li><a id="org231da7b"></a>v1.9<br />
 <div class="outline-text-5" id="text-2-3-0-7">
 <div class="org-src-container">
 <pre class="src src-latex">v1.9
@@ -348,7 +348,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org6defcd9"></a>v1.91<br />
+<li><a id="org20cd03d"></a>v1.91<br />
 <div class="outline-text-5" id="text-2-3-0-8">
 <div class="org-src-container">
 <pre class="src src-latex">v1.91
@@ -359,7 +359,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org3b8bb83"></a>v1.92<br />
+<li><a id="org36eab31"></a>v1.92<br />
 <div class="outline-text-5" id="text-2-3-0-9">
 <div class="org-src-container">
 <pre class="src src-latex">v1.92
@@ -374,7 +374,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org7d29644"></a>v1.93<br />
+<li><a id="org99587e0"></a>v1.93<br />
 <div class="outline-text-5" id="text-2-3-0-10">
 <div class="org-src-container">
 <pre class="src src-latex">v1.93
@@ -388,7 +388,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org960326d"></a>v1.94<br />
+<li><a id="org2a9b283"></a>v1.94<br />
 <div class="outline-text-5" id="text-2-3-0-11">
 <div class="org-src-container">
 <pre class="src src-latex">v1.94
@@ -401,7 +401,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="org269e795"></a>v1.95<br />
+<li><a id="org8d8fa4b"></a>v1.95<br />
 <div class="outline-text-5" id="text-2-3-0-12">
 <div class="org-src-container">
 <pre class="src src-latex">v1.95
@@ -413,7 +413,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="orgb2ef84c"></a>v1.96<br />
+<li><a id="org93c521c"></a>v1.96<br />
 <div class="outline-text-5" id="text-2-3-0-13">
 <div class="org-src-container">
 <pre class="src src-latex">v1.96
@@ -432,7 +432,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="orgd112b29"></a>v2.00<br />
+<li><a id="org6e26f19"></a>v2.00<br />
 <div class="outline-text-5" id="text-2-3-0-14">
 <div class="org-src-container">
 <pre class="src src-latex">v2.00
@@ -446,7 +446,7 @@ TeX-System to run.
 </div>
 </li>
 
-<li><a id="orgf22b360"></a>v2.1<br />
+<li><a id="org9723311"></a>v2.1<br />
 <div class="outline-text-5" id="text-2-3-0-15">
 <div class="org-src-container">
 <pre class="src src-latex">v2.1 new options introduced
@@ -461,7 +461,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orge5f3eb3"></a>v2.2<br />
+<li><a id="org2a928c8"></a>v2.2<br />
 <div class="outline-text-5" id="text-2-3-0-16">
 <div class="org-src-container">
 <pre class="src src-latex">v2.2
@@ -473,7 +473,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgd562c28"></a>v2.3<br />
+<li><a id="orgb05a387"></a>v2.3<br />
 <div class="outline-text-5" id="text-2-3-0-17">
 <div class="org-src-container">
 <pre class="src src-latex">v2.3
@@ -484,7 +484,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgdebbd6e"></a>v2.4<br />
+<li><a id="orga91c595"></a>v2.4<br />
 <div class="outline-text-5" id="text-2-3-0-18">
 <div class="org-src-container">
 <pre class="src src-latex">v2.4
@@ -497,7 +497,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgaea7d33"></a>v2.5<br />
+<li><a id="org96b03f2"></a>v2.5<br />
 <div class="outline-text-5" id="text-2-3-0-19">
 <div class="org-src-container">
 <pre class="src src-latex">v2.5
@@ -515,7 +515,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org5e24739"></a>v2.6<br />
+<li><a id="org788ccdd"></a>v2.6<br />
 <div class="outline-text-5" id="text-2-3-0-20">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.6
@@ -526,7 +526,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org8f31c5a"></a>v2.7<br />
+<li><a id="org36b6c22"></a>v2.7<br />
 <div class="outline-text-5" id="text-2-3-0-21">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.7
@@ -538,7 +538,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org5cc6ffc"></a>v2.8<br />
+<li><a id="org9e05cd3"></a>v2.8<br />
 <div class="outline-text-5" id="text-2-3-0-22">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.8
@@ -558,7 +558,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgac404ec"></a>v2.9<br />
+<li><a id="orgb1b69c9"></a>v2.9<br />
 <div class="outline-text-5" id="text-2-3-0-23">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.9
@@ -569,7 +569,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgb2ad029"></a>v2.10<br />
+<li><a id="orgca6b207"></a>v2.10<br />
 <div class="outline-text-5" id="text-2-3-0-24">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.10
@@ -580,7 +580,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgb65136b"></a>v2.11<br />
+<li><a id="orge50f066"></a>v2.11<br />
 <div class="outline-text-5" id="text-2-3-0-25">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.11
@@ -592,7 +592,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org96c6571"></a>v2.12<br />
+<li><a id="orgbb72d93"></a>v2.12<br />
 <div class="outline-text-5" id="text-2-3-0-26">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.12
@@ -604,7 +604,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgf98b25c"></a>v2.13<br />
+<li><a id="org8f8f262"></a>v2.13<br />
 <div class="outline-text-5" id="text-2-3-0-27">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.13
@@ -616,7 +616,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org619f592"></a>v2.14<br />
+<li><a id="orgebe4602"></a>v2.14<br />
 <div class="outline-text-5" id="text-2-3-0-28">
 <div class="org-src-container">
 <pre class="src src-latex"> v2.14
@@ -629,7 +629,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="org848c848"></a>v2.15<br />
+<li><a id="org30413d1"></a>v2.15<br />
 <div class="outline-text-5" id="text-2-3-0-29">
 <div class="org-src-container">
 <pre class="src src-latex">v2.15
@@ -644,8 +644,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 
 
-<div id="outline-container-orgc65dab4" class="outline-3">
-<h3 id="orgc65dab4"><span class="section-number-3">2.4.</span> Identification</h3>
+<div id="outline-container-org09d0e66" class="outline-3">
+<h3 id="org09d0e66"><span class="section-number-3">2.4.</span> Identification</h3>
 <div class="outline-text-3" id="text-2-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\def\fileversion</span>{2.15}
@@ -659,8 +659,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org70eed18" class="outline-3">
-<h3 id="org70eed18"><span class="section-number-3">2.5.</span> Banner</h3>
+<div id="outline-container-orgb9af34d" class="outline-3">
+<h3 id="orgb9af34d"><span class="section-number-3">2.5.</span> Banner</h3>
 <div class="outline-text-3" id="text-2-5">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\typeout</span>{------------------------------------------------------------------------}
@@ -676,17 +676,17 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-orgd27dadf" class="outline-3">
-<h3 id="orgd27dadf"><span class="section-number-3">2.6.</span> Options</h3>
+<div id="outline-container-org7549eaf" class="outline-3">
+<h3 id="org7549eaf"><span class="section-number-3">2.6.</span> Options</h3>
 <div class="outline-text-3" id="text-2-6">
 </div>
 
-<div id="outline-container-org3f8dcb2" class="outline-4">
-<h4 id="org3f8dcb2"><span class="section-number-4">2.6.1.</span> geometry</h4>
+<div id="outline-container-org1e684a8" class="outline-4">
+<h4 id="org1e684a8"><span class="section-number-4">2.6.1.</span> geometry</h4>
 <div class="outline-text-4" id="text-2-6-1">
 </div>
 <ol class="org-ol">
-<li><a id="org5d251da"></a>US Letter<br />
+<li><a id="org0b774ee"></a>US Letter<br />
 <div class="outline-text-5" id="text-2-6-1-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{acus}{<span style="color: #7f0000; font-style: italic;">%</span>
@@ -701,7 +701,7 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </li>
 
-<li><a id="orgf7e4c01"></a>A4<br />
+<li><a id="org73bd584"></a>A4<br />
 <div class="outline-text-5" id="text-2-6-1-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{a4paper}{<span style="color: #7f0000; font-style: italic;">%</span>
@@ -718,8 +718,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </ol>
 </div>
 
-<div id="outline-container-org809efe9" class="outline-4">
-<h4 id="org809efe9"><span class="section-number-4">2.6.2.</span> Frame</h4>
+<div id="outline-container-orgd5776a4" class="outline-4">
+<h4 id="orgd5776a4"><span class="section-number-4">2.6.2.</span> Frame</h4>
 <div class="outline-text-4" id="text-2-6-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>{boxit}{<span style="color: #531ab6; font-weight: bold;">\PassOptionsToPackage</span>{showframe}{geometry}}
@@ -728,8 +728,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org10637a2" class="outline-4">
-<h4 id="org10637a2"><span class="section-number-4">2.6.3.</span> biblatex</h4>
+<div id="outline-container-orgc936db1" class="outline-4">
+<h4 id="orgc936db1"><span class="section-number-4">2.6.3.</span> biblatex</h4>
 <div class="outline-text-4" id="text-2-6-3">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newif\ifjacowbiblatex</span>
@@ -739,8 +739,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org62800a3" class="outline-4">
-<h4 id="org62800a3"><span class="section-number-4">2.6.4.</span> refpage</h4>
+<div id="outline-container-org42a76d3" class="outline-4">
+<h4 id="org42a76d3"><span class="section-number-4">2.6.4.</span> refpage</h4>
 <div class="outline-text-4" id="text-2-6-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newif\ifjacowrefpage</span>
@@ -750,8 +750,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-orgf59af6b" class="outline-4">
-<h4 id="orgf59af6b"><span class="section-number-4">2.6.5.</span> Pass Options</h4>
+<div id="outline-container-org296a31f" class="outline-4">
+<h4 id="org296a31f"><span class="section-number-4">2.6.5.</span> Pass Options</h4>
 <div class="outline-text-4" id="text-2-6-5">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\DeclareOption</span>*{<span style="color: #531ab6; font-weight: bold;">\PassOptionsToClass</span>{<span style="color: #531ab6; font-weight: bold;">\CurrentOption</span>}{article}}
@@ -760,8 +760,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org26cfe99" class="outline-4">
-<h4 id="org26cfe99"><span class="section-number-4">2.6.6.</span> Paper Size</h4>
+<div id="outline-container-orga22b7bd" class="outline-4">
+<h4 id="orga22b7bd"><span class="section-number-4">2.6.6.</span> Paper Size</h4>
 <div class="outline-text-4" id="text-2-6-6">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ExecuteOptions</span>{aca4}
@@ -772,13 +772,13 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org04003af" class="outline-3">
-<h3 id="org04003af"><span class="section-number-3">2.7.</span> Packages</h3>
+<div id="outline-container-orgfde6edc" class="outline-3">
+<h3 id="orgfde6edc"><span class="section-number-3">2.7.</span> Packages</h3>
 <div class="outline-text-3" id="text-2-7">
 </div>
 
-<div id="outline-container-orgf726f5e" class="outline-4">
-<h4 id="orgf726f5e"><span class="section-number-4">2.7.1.</span> Load Class</h4>
+<div id="outline-container-org6a37e23" class="outline-4">
+<h4 id="org6a37e23"><span class="section-number-4">2.7.1.</span> Load Class</h4>
 <div class="outline-text-4" id="text-2-7-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\LoadClass</span>[10pt,twocolumn]{article}
@@ -787,8 +787,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-org5237821" class="outline-4">
-<h4 id="org5237821"><span class="section-number-4">2.7.2.</span> fix-cm   Permit Computer Modern fonts at arbitrary sizes.</h4>
+<div id="outline-container-orgb6ae009" class="outline-4">
+<h4 id="orgb6ae009"><span class="section-number-4">2.7.2.</span> fix-cm — Permit Computer Modern fonts at arbitrary sizes.</h4>
 <div class="outline-text-4" id="text-2-7-2">
 <p>
 <a href="https://ctan.org/pkg/fix-cm">https://ctan.org/pkg/fix-cm</a>
@@ -801,8 +801,8 @@ BibLaTeX: changed: style=ieee =&gt; bibstyle=ieee, citestyle=numeric-comp
 </div>
 </div>
 
-<div id="outline-container-orgc18cbf7" class="outline-4">
-<h4 id="orgc18cbf7"><span class="section-number-4">2.7.3.</span> flushend   Balancing columns at last page</h4>
+<div id="outline-container-org34af3b3" class="outline-4">
+<h4 id="org34af3b3"><span class="section-number-4">2.7.3.</span> flushend — Balancing columns at last page</h4>
 <div class="outline-text-4" id="text-2-7-3">
 <p>
 <a href="https://ctan.org/pkg/flushend">https://ctan.org/pkg/flushend</a>
@@ -819,8 +819,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org0031ca8" class="outline-4">
-<h4 id="org0031ca8"><span class="section-number-4">2.7.4.</span> Confliction between lineno and minted</h4>
+<div id="outline-container-orgee64d6b" class="outline-4">
+<h4 id="orgee64d6b"><span class="section-number-4">2.7.4.</span> Confliction between lineno and minted</h4>
 <div class="outline-text-4" id="text-2-7-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">a lot of authors love to use `minted` to typeset codes which also loads `lineno`</span>
@@ -834,8 +834,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org53de976" class="outline-4">
-<h4 id="org53de976"><span class="section-number-4">2.7.5.</span> etoolbox   e-TeX tools for LaTeX</h4>
+<div id="outline-container-org380924b" class="outline-4">
+<h4 id="org380924b"><span class="section-number-4">2.7.5.</span> etoolbox — e-TeX tools for LaTeX</h4>
 <div class="outline-text-4" id="text-2-7-5">
 <p>
 <a href="https://ctan.org/pkg/etoolbox">https://ctan.org/pkg/etoolbox</a>
@@ -848,8 +848,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org67b801a" class="outline-4">
-<h4 id="org67b801a"><span class="section-number-4">2.7.6.</span> iftex   Am I running under pdfTeX, XeTeX or LuaTeX?</h4>
+<div id="outline-container-orgcece514" class="outline-4">
+<h4 id="orgcece514"><span class="section-number-4">2.7.6.</span> iftex — Am I running under pdfTeX, XeTeX or LuaTeX?</h4>
 <div class="outline-text-4" id="text-2-7-6">
 <p>
 <a href="https://ctan.org/pkg/iftex">https://ctan.org/pkg/iftex</a>
@@ -862,8 +862,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org881ba32" class="outline-4">
-<h4 id="org881ba32"><span class="section-number-4">2.7.7.</span> textcase   Case conversion ignoring mathematics, etc</h4>
+<div id="outline-container-orge664271" class="outline-4">
+<h4 id="orge664271"><span class="section-number-4">2.7.7.</span> textcase — Case conversion ignoring mathematics, etc</h4>
 <div class="outline-text-4" id="text-2-7-7">
 <p>
 <a href="https://ctan.org/pkg/textcase">https://ctan.org/pkg/textcase</a>
@@ -913,8 +913,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org7a71f72" class="outline-4">
-<h4 id="org7a71f72"><span class="section-number-4">2.7.8.</span> siunitx   A comprehensive (SI) units package</h4>
+<div id="outline-container-org8827907" class="outline-4">
+<h4 id="org8827907"><span class="section-number-4">2.7.8.</span> siunitx — A comprehensive (SI) units package</h4>
 <div class="outline-text-4" id="text-2-7-8">
 <p>
 <a href="https://ctan.org/pkg/siunitx">https://ctan.org/pkg/siunitx</a>
@@ -943,8 +943,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org5d4ed64" class="outline-4">
-<h4 id="org5d4ed64"><span class="section-number-4">2.7.9.</span> graphicx   Enhanced support for graphics</h4>
+<div id="outline-container-orgd527b87" class="outline-4">
+<h4 id="orgd527b87"><span class="section-number-4">2.7.9.</span> graphicx — Enhanced support for graphics</h4>
 <div class="outline-text-4" id="text-2-7-9">
 <p>
 <a href="https://ctan.org/pkg/graphicx">https://ctan.org/pkg/graphicx</a>
@@ -957,8 +957,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org6f4d1ed" class="outline-4">
-<h4 id="org6f4d1ed"><span class="section-number-4">2.7.10.</span> booktabs   Publication quality tables in LaTeX</h4>
+<div id="outline-container-org727f14d" class="outline-4">
+<h4 id="org727f14d"><span class="section-number-4">2.7.10.</span> booktabs — Publication quality tables in LaTeX</h4>
 <div class="outline-text-4" id="text-2-7-10">
 <p>
 <a href="https://ctan.org/pkg/booktabs">https://ctan.org/pkg/booktabs</a>
@@ -971,8 +971,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org301b007" class="outline-4">
-<h4 id="org301b007"><span class="section-number-4">2.7.11.</span> caption   Customising captions in floating environments</h4>
+<div id="outline-container-org84277b2" class="outline-4">
+<h4 id="org84277b2"><span class="section-number-4">2.7.11.</span> caption — Customising captions in floating environments</h4>
 <div class="outline-text-4" id="text-2-7-11">
 <p>
 <a href="https://ctan.org/pkg/caption">https://ctan.org/pkg/caption</a>
@@ -985,8 +985,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgaf3900a" class="outline-4">
-<h4 id="orgaf3900a"><span class="section-number-4">2.7.12.</span> xcolor   Driver-independent color extensions for LaTeX and pdfLaTeX</h4>
+<div id="outline-container-orgbf40351" class="outline-4">
+<h4 id="orgbf40351"><span class="section-number-4">2.7.12.</span> xcolor — Driver-independent color extensions for LaTeX and pdfLaTeX</h4>
 <div class="outline-text-4" id="text-2-7-12">
 <p>
 <a href="https://ctan.org/pkg/xcolor">https://ctan.org/pkg/xcolor</a>
@@ -999,8 +999,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgb1db26a" class="outline-4">
-<h4 id="orgb1db26a"><span class="section-number-4">2.7.13.</span> amsmath   AMS mathematical facilities for LaTeX</h4>
+<div id="outline-container-orgff23468" class="outline-4">
+<h4 id="orgff23468"><span class="section-number-4">2.7.13.</span> amsmath — AMS mathematical facilities for LaTeX</h4>
 <div class="outline-text-4" id="text-2-7-13">
 <p>
 <a href="https://ctan.org/pkg/amsmath">https://ctan.org/pkg/amsmath</a>
@@ -1013,8 +1013,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org8bf941b" class="outline-4">
-<h4 id="org8bf941b"><span class="section-number-4">2.7.14.</span> csquotes   Context sensitive quotation facilities</h4>
+<div id="outline-container-org8e06aaa" class="outline-4">
+<h4 id="org8e06aaa"><span class="section-number-4">2.7.14.</span> csquotes — Context sensitive quotation facilities</h4>
 <div class="outline-text-4" id="text-2-7-14">
 <p>
 <a href="https://ctan.org/pkg/csquotes">https://ctan.org/pkg/csquotes</a>
@@ -1027,8 +1027,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orga99b95f" class="outline-4">
-<h4 id="orga99b95f"><span class="section-number-4">2.7.15.</span> geometry   Flexible and complete interface to document dimensions</h4>
+<div id="outline-container-orgb68054e" class="outline-4">
+<h4 id="orgb68054e"><span class="section-number-4">2.7.15.</span> geometry — Flexible and complete interface to document dimensions</h4>
 <div class="outline-text-4" id="text-2-7-15">
 <p>
 <a href="https://ctan.org/pkg/geometry">https://ctan.org/pkg/geometry</a>
@@ -1060,8 +1060,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgda33f1c" class="outline-4">
-<h4 id="orgda33f1c"><span class="section-number-4">2.7.16.</span> footmisc   A range of footnote options</h4>
+<div id="outline-container-orgb032f13" class="outline-4">
+<h4 id="orgb032f13"><span class="section-number-4">2.7.16.</span> footmisc — A range of footnote options</h4>
 <div class="outline-text-4" id="text-2-7-16">
 <p>
 <a href="https://ctan.org/pkg/footmisc">https://ctan.org/pkg/footmisc</a>
@@ -1076,8 +1076,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgfd6fc0d" class="outline-4">
-<h4 id="orgfd6fc0d"><span class="section-number-4">2.7.17.</span> url   Verbatim with URL-sensitive line breaks</h4>
+<div id="outline-container-org939eeee" class="outline-4">
+<h4 id="org939eeee"><span class="section-number-4">2.7.17.</span> url — Verbatim with URL-sensitive line breaks</h4>
 <div class="outline-text-4" id="text-2-7-17">
 <p>
 <a href="https://ctan.org/pkg/url">https://ctan.org/pkg/url</a>
@@ -1090,8 +1090,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org960a07e" class="outline-4">
-<h4 id="org960a07e"><span class="section-number-4">2.7.18.</span> newtxtt   Enhancement of typewriter fonts from newtx</h4>
+<div id="outline-container-orgd509eb3" class="outline-4">
+<h4 id="orgd509eb3"><span class="section-number-4">2.7.18.</span> newtxtt — Enhancement of typewriter fonts from newtx</h4>
 <div class="outline-text-4" id="text-2-7-18">
 <p>
 <a href="https://ctan.org/pkg/newtxtt">https://ctan.org/pkg/newtxtt</a>
@@ -1104,8 +1104,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org8b428ad" class="outline-4">
-<h4 id="org8b428ad"><span class="section-number-4">2.7.19.</span> URL Fonts</h4>
+<div id="outline-container-org2d5da5f" class="outline-4">
+<h4 id="org2d5da5f"><span class="section-number-4">2.7.19.</span> URL Fonts</h4>
 <div class="outline-text-4" id="text-2-7-19">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span>
@@ -1119,8 +1119,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgaadc040" class="outline-4">
-<h4 id="orgaadc040"><span class="section-number-4">2.7.20.</span> XeTeX &amp; LuaTeX</h4>
+<div id="outline-container-orgfc10db7" class="outline-4">
+<h4 id="orgfc10db7"><span class="section-number-4">2.7.20.</span> XeTeX &amp; LuaTeX</h4>
 <div class="outline-text-4" id="text-2-7-20">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\ifboolexpr</span>{bool{xetex} or bool{luatex}}
@@ -1158,8 +1158,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org18c78bf" class="outline-4">
-<h4 id="org18c78bf"><span class="section-number-4">2.7.21.</span> microtype   Subliminal refinements towards typographical perfection</h4>
+<div id="outline-container-orgd4140f5" class="outline-4">
+<h4 id="orgd4140f5"><span class="section-number-4">2.7.21.</span> microtype — Subliminal refinements towards typographical perfection</h4>
 <div class="outline-text-4" id="text-2-7-21">
 <p>
 <a href="https://ctan.org/pkg/microtype">https://ctan.org/pkg/microtype</a>
@@ -1173,13 +1173,13 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgea83aed" class="outline-3">
-<h3 id="orgea83aed"><span class="section-number-3">2.8.</span> Customisation</h3>
+<div id="outline-container-org1020d7d" class="outline-3">
+<h3 id="org1020d7d"><span class="section-number-3">2.8.</span> Customisation</h3>
 <div class="outline-text-3" id="text-2-8">
 </div>
 
-<div id="outline-container-org2599704" class="outline-4">
-<h4 id="org2599704"><span class="section-number-4">2.8.1.</span> Lists</h4>
+<div id="outline-container-org1335bb9" class="outline-4">
+<h4 id="org1335bb9"><span class="section-number-4">2.8.1.</span> Lists</h4>
 <div class="outline-text-4" id="text-2-8-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>{<span style="color: #721045;">enumitem</span>}
@@ -1191,8 +1191,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-org9289fa0" class="outline-4">
-<h4 id="org9289fa0"><span class="section-number-4">2.8.2.</span> Float Parameters</h4>
+<div id="outline-container-org0a9334f" class="outline-4">
+<h4 id="org0a9334f"><span class="section-number-4">2.8.2.</span> Float Parameters</h4>
 <div class="outline-text-4" id="text-2-8-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span>{<span style="color: #721045; font-weight: bold;">\topfraction</span>}{<span style="color: #721045;">.95</span>}
@@ -1204,12 +1204,12 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgd344f12" class="outline-4">
-<h4 id="orgd344f12"><span class="section-number-4">2.8.3.</span> Headings</h4>
+<div id="outline-container-org587983b" class="outline-4">
+<h4 id="org587983b"><span class="section-number-4">2.8.3.</span> Headings</h4>
 <div class="outline-text-4" id="text-2-8-3">
 </div>
 <ol class="org-ol">
-<li><a id="org550b906"></a>section<br />
+<li><a id="orgd0a45c6"></a>section<br />
 <div class="outline-text-5" id="text-2-8-3-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">section: Uppercase only for text</span>
@@ -1224,7 +1224,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="org4c89013"></a>subsection<br />
+<li><a id="orgfbf5a22"></a>subsection<br />
 <div class="outline-text-5" id="text-2-8-3-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subsection</span>
@@ -1238,7 +1238,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="org22ceedf"></a>subsubsection<br />
+<li><a id="orgc725ff9"></a>subsubsection<br />
 <div class="outline-text-5" id="text-2-8-3-3">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subsubsection</span>
@@ -1252,7 +1252,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="org7e02acc"></a>paragraph<br />
+<li><a id="orgb02324a"></a>paragraph<br />
 <div class="outline-text-5" id="text-2-8-3-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\paragraph</span>
@@ -1266,7 +1266,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="org7a7e77e"></a>subparagraph<br />
+<li><a id="org06d3b5c"></a>subparagraph<br />
 <div class="outline-text-5" id="text-2-8-3-5">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewcommand</span><span style="color: #721045; font-weight: bold;">\subparagraph</span>
@@ -1280,7 +1280,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="orga2f334e"></a>secnumdepth<br />
+<li><a id="orgeded6b0"></a>secnumdepth<br />
 <div class="outline-text-5" id="text-2-8-3-6">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\setcounter</span>{<span style="color: #005e8b;">secnumdepth</span>}{<span style="color: #005e8b;">0</span>}
@@ -1291,8 +1291,8 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </ol>
 </div>
 
-<div id="outline-container-org32d6c05" class="outline-4">
-<h4 id="org32d6c05"><span class="section-number-4">2.8.4.</span> Title</h4>
+<div id="outline-container-org50e87a9" class="outline-4">
+<h4 id="org50e87a9"><span class="section-number-4">2.8.4.</span> Title</h4>
 <div class="outline-text-4" id="text-2-8-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-style: italic;">This definition of </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\maketitle</span><span style="color: #7f0000; font-style: italic;"> taken from article.sty, and has been</span>
@@ -1372,12 +1372,12 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </div>
 
-<div id="outline-container-orgc15c5c1" class="outline-3">
-<h3 id="orgc15c5c1"><span class="section-number-3">2.9.</span> biblatex</h3>
+<div id="outline-container-org0e91144" class="outline-3">
+<h3 id="org0e91144"><span class="section-number-3">2.9.</span> biblatex</h3>
 <div class="outline-text-3" id="text-2-9">
 </div>
 <ol class="org-ol">
-<li><a id="orgba1d140"></a>Place doi in the same line <i>if</i> possible<br />
+<li><a id="orga2eee2c"></a>Place doi in the same line <i>if</i> possible<br />
 <div class="outline-text-5" id="text-2-9-0-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\newbox\doi@box</span>
@@ -1413,7 +1413,7 @@ Part of <a href="https://ctan.org/pkg/sttools">sttools</a> package
 </div>
 </li>
 
-<li><a id="org0a2aeba"></a>biblatex style<br />
+<li><a id="org1713c53"></a>biblatex style<br />
 <div class="outline-text-5" id="text-2-9-0-2">
 <p>
 If <code>biblatex</code> is not activated:
@@ -1441,9 +1441,9 @@ Otherwise,
 </div>
 
 <ol class="org-ol">
-<li><a id="orgd950ecb"></a>Import biblatex<br />
+<li><a id="org0da3412"></a>Import biblatex<br />
 <ol class="org-ol">
-<li><a id="org888595c"></a>v2.00<br />
+<li><a id="orgb1e7361"></a>v2.00<br />
 <div class="outline-text-7" id="text-2-9-0-2-1-1">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">style=ieee,sorting=none,giveninits=true,doi=false,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
@@ -1452,7 +1452,7 @@ Otherwise,
 </div>
 </li>
 
-<li><a id="org2dbd931"></a>v2.1<br />
+<li><a id="orge067c19"></a>v2.1<br />
 <div class="outline-text-7" id="text-2-9-0-2-1-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">style=ieee,sorting=none,giveninits=true,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
@@ -1461,7 +1461,7 @@ Otherwise,
 </div>
 </li>
 
-<li><a id="orgdab95d3"></a>v2.2<br />
+<li><a id="orgb88e8e3"></a>v2.2<br />
 <div class="outline-text-7" id="text-2-9-0-2-1-3">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\RequirePackage</span>[<span style="color: #005e8b;">bibstyle=ieee,citestyle=numeric-comp,dashed=false,sorting=none,giveninits=true,maxnames=6,minnames=1</span>]{<span style="color: #721045;">biblatex</span>}
@@ -1473,7 +1473,7 @@ Otherwise,
 </li>
 
 
-<li><a id="org2982350"></a>bib macros<br />
+<li><a id="org05a3621"></a>bib macros<br />
 <div class="outline-text-6" id="text-2-9-0-2-2">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #531ab6; font-weight: bold;">\renewbibmacro</span>*{url+urldate}{<span style="color: #7f0000; font-style: italic;">%</span>
@@ -1535,7 +1535,7 @@ print <code>url</code> if no <code>doi</code>
 </div>
 </li>
 
-<li><a id="orgac64e37"></a>field formats<br />
+<li><a id="org86c9dad"></a>field formats<br />
 <div class="outline-text-6" id="text-2-9-0-2-3">
 <p>
 <code>url</code>
@@ -1587,7 +1587,7 @@ format ISSN like URLs
 </div>
 </li>
 
-<li><a id="org71852d1"></a>bib extras<br />
+<li><a id="org594f871"></a>bib extras<br />
 <div class="outline-text-6" id="text-2-9-0-2-4">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">%% </span><span style="color: #7f0000; font-style: italic;">when to activate this? Paper format acus/letter</span>
@@ -1605,7 +1605,7 @@ format ISSN like URLs
 </div>
 </li>
 
-<li><a id="orgcc3263d"></a>bib customisation<br />
+<li><a id="org946d0af"></a>bib customisation<br />
 <div class="outline-text-6" id="text-2-9-0-2-5">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span>
@@ -1698,7 +1698,7 @@ Set tolerance before the environment.
 </ol>
 </li>
 
-<li><a id="orgdd571e6"></a>Penalties<br />
+<li><a id="orgb55f73c"></a>Penalties<br />
 <div class="outline-text-5" id="text-2-9-0-3">
 <div class="org-src-container">
 <pre class="src src-latex"><span style="color: #7f0000; font-style: italic;">% </span><span style="color: #7f0000; font-weight: bold; font-style: italic;">\sloppy</span>
@@ -1709,7 +1709,7 @@ Set tolerance before the environment.
 </div>
 </li>
 
-<li><a id="orgcfa06e4"></a>Bug Fixings<br />
+<li><a id="org359fe4f"></a>Bug Fixings<br />
 <div class="outline-text-5" id="text-2-9-0-4">
 <p>
 avoid bug of fixltx2e:
@@ -1763,12 +1763,12 @@ avoid bug of fixltx2e:
 </div>
 </div>
 
-<div id="outline-container-org0f5c29a" class="outline-2">
-<h2 id="org0f5c29a"><span class="section-number-2">3.</span> LaTeX Samples</h2>
+<div id="outline-container-orge710382" class="outline-2">
+<h2 id="orge710382"><span class="section-number-2">3.</span> LaTeX Samples</h2>
 </div>
 
-<div id="outline-container-orgbf6bbb8" class="outline-2">
-<h2 id="orgbf6bbb8"><span class="section-number-2">4.</span> <span class="todo TODO">TODO</span> MS Word</h2>
+<div id="outline-container-orgf2be038" class="outline-2">
+<h2 id="orgf2be038"><span class="section-number-2">4.</span> <span class="todo TODO">TODO</span> MS Word</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li><a href="https://python-docx.readthedocs.io/en/latest/">python-docx</a>
@@ -1783,8 +1783,8 @@ avoid bug of fixltx2e:
 </div>
 </div>
 
-<div id="outline-container-org9f4f355" class="outline-2">
-<h2 id="org9f4f355"><span class="section-number-2">5.</span> <span class="todo TODO">TODO</span> Apach OpenOffice</h2>
+<div id="outline-container-orgacb9044" class="outline-2">
+<h2 id="orgacb9044"><span class="section-number-2">5.</span> <span class="todo TODO">TODO</span> Apach OpenOffice</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li><a href="https://relatorio.readthedocs.io/en/latest/index.html">relatorio</a>
@@ -1801,12 +1801,12 @@ avoid bug of fixltx2e:
 </div>
 </div>
 
-<div id="outline-container-org55c30fe" class="outline-2">
-<h2 id="org55c30fe"><span class="section-number-2">6.</span> Future Work</h2>
+<div id="outline-container-org2c4f837" class="outline-2">
+<h2 id="org2c4f837"><span class="section-number-2">6.</span> Future Work</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgf382942" class="outline-3">
-<h3 id="orgf382942"><span class="section-number-3">6.1.</span> Bugs</h3>
+<div id="outline-container-org7a2e2e8" class="outline-3">
+<h3 id="org7a2e2e8"><span class="section-number-3">6.1.</span> Bugs</h3>
 <div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> <code>:padline</code> does not seem to work</li>
@@ -1814,8 +1814,8 @@ avoid bug of fixltx2e:
 </div>
 </div>
 
-<div id="outline-container-org038bd72" class="outline-3">
-<h3 id="org038bd72"><span class="section-number-3">6.2.</span> Smart Documentation</h3>
+<div id="outline-container-org1b6894b" class="outline-3">
+<h3 id="org1b6894b"><span class="section-number-3">6.2.</span> Smart Documentation</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 Try to automatically wrap the version, author and date information around the change logs. Need to dig how to achieve that without overriding functions in the <code>ob tangle.el</code> file.
@@ -1843,8 +1843,8 @@ Try to automatically wrap the version, author and date information around the ch
 </div>
 </div>
 
-<div id="outline-container-org2370ad5" class="outline-3">
-<h3 id="org2370ad5"><span class="section-number-3">6.3.</span> Tips</h3>
+<div id="outline-container-org76a1263" class="outline-3">
+<h3 id="org76a1263"><span class="section-number-3">6.3.</span> Tips</h3>
 <div class="outline-text-3" id="text-6-3">
 <p>
 Put the following to the header to get the <code>solarized</code> theme of the HTML export.
@@ -1861,7 +1861,7 @@ Put the following to the header to get the <code>solarized</code> theme of the H
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: John Jowett (CERN), Michel Goossens (CERN), Martin Comyn (TRIUMF), John Poole (CERN), Todd Satogata (BNL), Ulrike Fischer, Volker RW Schaa (GSI), Zhichu Chen (SSRF)</p>
-<p class="date">Created: 2023-03-20 Mon 14:47</p>
+<p class="date">Created: 2023-03-21 Tue 07:18</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

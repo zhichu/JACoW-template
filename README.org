@@ -1284,14 +1284,14 @@ Ignore everything after
   \LoadClass[10pt,twocolumn]{article}
 #+end_src
 
-*** fix-cm   Permit Computer Modern fonts at arbitrary sizes.
+*** fix-cm — Permit Computer Modern fonts at arbitrary sizes.
 [[https://ctan.org/pkg/fix-cm]]
 
 #+begin_src latex
   \RequirePackage{fix-cm}
 #+end_src
 
-*** flushend   Balancing columns at last page
+*** flushend — Balancing columns at last page
 [[https://ctan.org/pkg/flushend]]
 
 Part of [[https://ctan.org/pkg/sttools][sttools]] package
@@ -1310,21 +1310,21 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
   \@namedef{opt@lineno.sty}{}
 #+end_src
 
-*** etoolbox   e-TeX tools for LaTeX
+*** etoolbox — e-TeX tools for LaTeX
 [[https://ctan.org/pkg/etoolbox]]
 
 #+begin_src latex
   \RequirePackage{etoolbox}
 #+end_src
 
-*** iftex   Am I running under pdfTeX, XeTeX or LuaTeX?
+*** iftex — Am I running under pdfTeX, XeTeX or LuaTeX?
 [[https://ctan.org/pkg/iftex]]
 
 #+begin_src latex
   \RequirePackage{iftex}
 #+end_src
 
-*** textcase   Case conversion ignoring mathematics, etc
+*** textcase — Case conversion ignoring mathematics, etc
 [[https://ctan.org/pkg/textcase]]
 
 #+begin_src latex
@@ -1368,7 +1368,7 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
   \fi
 #+end_src
 
-*** siunitx   A comprehensive (SI) units package
+*** siunitx — A comprehensive (SI) units package
 [[https://ctan.org/pkg/siunitx]]
 
 #+begin_src latex
@@ -1391,49 +1391,49 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
     \sisetup{detect-mode,detect-weight, binary-units=true}}%                % copied from jacow.cls version 2.4
 #+end_src
 
-*** graphicx   Enhanced support for graphics
+*** graphicx — Enhanced support for graphics
 [[https://ctan.org/pkg/graphicx]]
 
 #+begin_src latex
   \RequirePackage{graphicx}
 #+end_src
 
-*** booktabs   Publication quality tables in LaTeX
+*** booktabs — Publication quality tables in LaTeX
 [[https://ctan.org/pkg/booktabs]]
 
 #+begin_src latex
   \RequirePackage{booktabs}
 #+end_src
 
-*** caption   Customising captions in floating environments
+*** caption — Customising captions in floating environments
 [[https://ctan.org/pkg/caption]]
 
 #+begin_src latex
   \RequirePackage[figureposition=bottom,tableposition=top,skip=5pt]{caption}
 #+end_src
 
-*** xcolor   Driver-independent color extensions for LaTeX and pdfLaTeX
+*** xcolor — Driver-independent color extensions for LaTeX and pdfLaTeX
 [[https://ctan.org/pkg/xcolor]]
 
 #+begin_src latex
   \RequirePackage{xcolor}
 #+end_src
 
-*** amsmath   AMS mathematical facilities for LaTeX
+*** amsmath — AMS mathematical facilities for LaTeX
 [[https://ctan.org/pkg/amsmath]]
 
 #+begin_src latex
   \RequirePackage{amsmath}
 #+end_src
 
-*** csquotes   Context sensitive quotation facilities
+*** csquotes — Context sensitive quotation facilities
 [[https://ctan.org/pkg/csquotes]]
 
 #+begin_src latex
   \AtEndPreamble{\RequirePackage[autostyle]{csquotes}}
 #+end_src
 
-*** geometry   Flexible and complete interface to document dimensions
+*** geometry — Flexible and complete interface to document dimensions
 [[https://ctan.org/pkg/geometry]]
 
 #+begin_src latex
@@ -1459,7 +1459,7 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
   \columnseprule 0pt
 #+end_src
 
-*** footmisc   A range of footnote options
+*** footmisc — A range of footnote options
 [[https://ctan.org/pkg/footmisc]]
 
 #+begin_src latex
@@ -1468,14 +1468,14 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
   \pagestyle{empty}
 #+end_src
 
-*** url   Verbatim with URL-sensitive line breaks
+*** url — Verbatim with URL-sensitive line breaks
 [[https://ctan.org/pkg/url]]
 
 #+begin_src latex
   \RequirePackage{url}
 #+end_src
 
-*** newtxtt   Enhancement of typewriter fonts from newtx
+*** newtxtt — Enhancement of typewriter fonts from newtx
 [[https://ctan.org/pkg/newtxtt]]
 
 #+begin_src latex
@@ -1525,7 +1525,7 @@ Part of [[https://ctan.org/pkg/sttools][sttools]] package
     }
 #+end_src
 
-*** microtype   Subliminal refinements towards typographical perfection
+*** microtype — Subliminal refinements towards typographical perfection
 [[https://ctan.org/pkg/microtype]]
 
 #+begin_src latex
