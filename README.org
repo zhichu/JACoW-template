@@ -1,6 +1,7 @@
 #+TITLE: JACoW Template
 #+AUTHOR: John Jowett (CERN), Michel Goossens (CERN), Martin Comyn (TRIUMF), John Poole (CERN), Todd Satogata (BNL), Ulrike Fischer, Volker RW Schaa (GSI), Zhichu Chen (SSRF)
 
+#+EXPORT_FILE_NAME: index
 #+PROPERTY: header-args    :noweb tangle :tangle no :exports code
 
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
